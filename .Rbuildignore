@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.travis\.yml$
+^CONDUCT\.md$
+^codecov\.yml$
+^README\.Rmd$
+^README-.*\.png$
