@@ -1,4 +1,4 @@
 library(testthat)
-library(Datasaurus)
+library(datasauRus)
 
-test_check("Datasaurus")
+test_check("datasauRus")

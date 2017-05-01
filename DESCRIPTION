@@ -1,8 +1,13 @@
-Package: Datasaurus
-Title: What the Package Does (one line, title case)
+Package: datasauRus
+Title: Datasets from the Datasaurus Dozen
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(person("Steph", "Locke", email = "steph@itsalocke.com", role = c( "cre")),
+             person("Alberto", "Cairo", email = "", role = c( "aut")),
+             person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "aut")),
+             person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "aut"))
+			 )
+Description: The Datasaurus Dozen are a set of datasets that have the same summary statistics
+             (like Anscombe's quarter) but includes Datasaurus, a dinosaur distribution.
 Depends: R (>= 3.3.3)
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -12,3 +17,4 @@ Suggests: covr,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+RoxygenNote: 6.0.1
