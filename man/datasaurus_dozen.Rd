@@ -4,7 +4,7 @@
 \name{datasaurus_dozen}
 \alias{datasaurus_dozen}
 \title{Datasaurus Dozen data}
-\format{An object of class \code{data.frame} with 1847 rows and 3 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1846 rows and 3 columns.}
 \usage{
 datasaurus_dozen
 }
