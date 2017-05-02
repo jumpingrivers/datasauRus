@@ -4,7 +4,7 @@
 \name{twelve_from_slant_alternate_long}
 \alias{twelve_from_slant_alternate_long}
 \title{Twelve From Slant Alternate (long) data}
-\format{An object of class \code{data.frame} with 2185 rows and 3 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2184 rows and 3 columns.}
 \usage{
 twelve_from_slant_alternate_long
 }

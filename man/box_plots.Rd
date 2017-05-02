@@ -4,7 +4,7 @@
 \name{box_plots}
 \alias{box_plots}
 \title{Box Plots data}
-\format{An object of class \code{data.frame} with 2484 rows and 5 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2484 rows and 6 columns.}
 \usage{
 box_plots
 }

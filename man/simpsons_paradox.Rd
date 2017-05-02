@@ -4,7 +4,7 @@
 \name{simpsons_paradox}
 \alias{simpsons_paradox}
 \title{Simpsons Paradox data}
-\format{An object of class \code{data.frame} with 445 rows and 3 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 444 rows and 3 columns.}
 \usage{
 simpsons_paradox
 }
