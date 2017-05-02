@@ -16,3 +16,44 @@ In the paper, Jusitn and George simulate a variety of datasets that the same sum
 ![](https://github.com/stephlocke/lazyCDN/blob/master/DinoSequential.gif?raw=true)
 
 This package looks to make these datasets available for use as an advanced [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), available in R as `anscombe`.
+
+Install
+-------
+
+Currently, only available on GitHub, so use `devtools` to install the package
+
+``` r
+devtools::install_github("stephlocke/datasauRus")
+```
+
+Usage
+-----
+
+You can use the package to produce Anscombe plots and more.
+
+``` r
+library(ggplot2)
+library(datasauRus)
+ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
+  geom_point()+
+  theme_void()+
+  theme(legend.position = "none")+
+  facet_wrap(~dataset, ncol=3)
+```
+
+![](README/README-unnamed-chunk-2-1.png)
+
+Tests
+-----
+
+``` r
+library(devtools)
+test()
+#> Loading datasauRus
+#> Loading required package: testthat
+#> Testing datasauRus
+#> datasets: ......................
+#> Raw files: .
+#> 
+#> DONE ======================================================================
+```
