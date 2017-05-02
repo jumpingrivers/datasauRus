@@ -6,9 +6,16 @@
 \title{Simpsons Paradox data}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 444 rows and 3 columns.}
 \usage{
-simpsons_paradox
+data(simpsons_paradox)
 }
 \description{
 Simpsons Paradox data
+}
+\references{
+Justin Matejka, George Fitzmaurice. (2017) Same Stats,
+Different Graphs: Generating Datasets with Varied Appearance and
+Identical Statistics through Simulated Annealing.
+CHI 2017 Conference proceedings: ACM SIGCHI Conference on Human
+Factors in Computing Systems.
 }
 \keyword{datasets}

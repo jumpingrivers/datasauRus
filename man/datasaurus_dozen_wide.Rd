@@ -6,9 +6,16 @@
 \title{Datasaurus Dozen (wide) data}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 142 rows and 26 columns.}
 \usage{
-datasaurus_dozen_wide
+data(datasaurus_dozen_wide)
 }
 \description{
 Datasaurus Dozen (wide) data
+}
+\references{
+Justin Matejka, George Fitzmaurice. (2017) Same Stats,
+Different Graphs: Generating Datasets with Varied Appearance and
+Identical Statistics through Simulated Annealing.
+CHI 2017 Conference proceedings: ACM SIGCHI Conference on Human
+Factors in Computing Systems.
 }
 \keyword{datasets}
