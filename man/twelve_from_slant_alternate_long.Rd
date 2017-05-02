@@ -12,10 +12,11 @@ data(twelve_from_slant_alternate_long)
 Twelve From Slant Alternate (long) data
 }
 \references{
-Justin Matejka, George Fitzmaurice. (2017) Same Stats,
-Different Graphs: Generating Datasets with Varied Appearance and
-Identical Statistics through Simulated Annealing.
-CHI 2017 Conference proceedings: ACM SIGCHI Conference on Human
-Factors in Computing Systems.
+Matejka, J., & Fitzmaurice, G. (2017).
+Same Stats, Different Graphs: Generating Datasets with
+Varied Appearance and Identical Statistics through Simulated
+Annealing. \emph{CHI 2017 Conference proceedings: ACM SIGCHI
+Conference on Human Factors in Computing Systems.}
+Retrieved from \url{https://www.autodeskresearch.com/publications/samestats}.
 }
 \keyword{datasets}
