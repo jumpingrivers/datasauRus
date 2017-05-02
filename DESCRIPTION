@@ -1,6 +1,6 @@
 Package: datasauRus
 Title: Datasets from the Datasaurus Dozen
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Steph", "Locke", email = "steph@itsalocke.com", role = c( "cre")),
              person("Alberto", "Cairo", email = "", role = c( "aut")),
              person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "aut")),
@@ -19,3 +19,4 @@ Suggests: covr,
     rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)

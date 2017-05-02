@@ -6,9 +6,17 @@
 \title{Simpsons Paradox (wide) data}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 222 rows and 4 columns.}
 \usage{
-simpsons_paradox_wide
+data(simpsons_paradox_wide)
 }
 \description{
 Simpsons Paradox (wide) data
+}
+\references{
+Matejka, J., & Fitzmaurice, G. (2017).
+Same Stats, Different Graphs: Generating Datasets with
+Varied Appearance and Identical Statistics through Simulated
+Annealing. \emph{CHI 2017 Conference proceedings: ACM SIGCHI
+Conference on Human Factors in Computing Systems.}
+Retrieved from \url{https://www.autodeskresearch.com/publications/samestats}.
 }
 \keyword{datasets}

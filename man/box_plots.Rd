@@ -6,9 +6,17 @@
 \title{Box Plots data}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2484 rows and 6 columns.}
 \usage{
-box_plots
+data(box_plots)
 }
 \description{
 Box Plots data
+}
+\references{
+Matejka, J., & Fitzmaurice, G. (2017).
+Same Stats, Different Graphs: Generating Datasets with
+Varied Appearance and Identical Statistics through Simulated
+Annealing. \emph{CHI 2017 Conference proceedings: ACM SIGCHI
+Conference on Human Factors in Computing Systems.}
+Retrieved from \url{https://www.autodeskresearch.com/publications/samestats}.
 }
 \keyword{datasets}
