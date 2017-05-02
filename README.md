@@ -3,6 +3,8 @@
 datasauRus
 ==========
 
+[![Build Status](https://travis-ci.org/stephlocke/datasauRus.svg?branch=master)](https://travis-ci.org/stephlocke/datasauRus)
+
 This package wraps the awesome Datasaurus Dozen dataset.
 
 The Datasaurus was created by Alberto Cairo in this great [blog post](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html).
