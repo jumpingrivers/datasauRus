@@ -9,7 +9,7 @@ Authors@R: c(person("Steph", "Locke", email = "steph@itsalocke.com", role = c( "
 			 )
 Description: The Datasaurus Dozen are a set of datasets that have the same summary statistics
              (like Anscombe's quarter) but includes Datasaurus, a dinosaur distribution.
-Depends: R (>= 3.3.3)
+Depends: R (>= 3.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
