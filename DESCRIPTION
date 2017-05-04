@@ -1,10 +1,10 @@
 Package: datasauRus
 Title: Datasets from the Datasaurus Dozen
-Version: 0.0.2
-Authors@R: c(person("Steph", "Locke", email = "steph@itsalocke.com", role = c( "cre")),
-             person("Alberto", "Cairo", email = "", role = c( "aut")),
-             person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "aut")),
-             person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "aut")),
+Version: 0.0.3
+Authors@R: c(person("Steph", "Locke", email = "steph@itsalocke.com", role = c( "cre","aut")),
+             person("Alberto", "Cairo", email = "", role = c( "dtc")),
+             person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "dtc")),
+             person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "dtc")),
              person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut"))
 			 )
 Description: The Datasaurus Dozen are a set of datasets that have the same summary statistics
