@@ -2,7 +2,7 @@ Package: datasauRus
 Title: Datasets from the Datasaurus Dozen
 Version: 0.0.3
 Authors@R: c(person("Steph", "Locke", email = "steph@itsalocke.com", role = c( "cre","aut")),
-             person("Alberto", "Cairo", email = "", role = c( "dtc")),
+             person("Alberto", "Cairo", email = "alberto.cairo@gmail.com", role = c( "dtc")),
              person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "dtc")),
              person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "dtc")),
              person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut"))
