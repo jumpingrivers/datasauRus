@@ -7,8 +7,17 @@ Authors@R: c(person("Steph", "Locke", email = "stephanie.g.locke@gmail.com", rol
              person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "dtc")),
              person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut"))
 			 )
-Description: The Datasaurus Dozen are a set of datasets that have the same summary statistics
-             (like Anscombe's quartet) but includes Datasaurus, a dinosaur distribution.
+Description: The Datasaurus Dozen is a set of datasets with the same summary statistics. They 
+             retain the same summary statistics despite having radically different distributions.
+             The datasets represent a larger and quirkier object lesson that is typically taught
+             via Anscombe's Quartet (available in the 'dataset' package). Anscombe's Quartet
+             contains four very different distributions with the same summary statistics and as 
+             such highights the value of visualisation in understanding data, over and above
+             summary statistics. As well as being an engaging variant on the Quartet, the data
+             is generated in a novel way. The simulated annealing process used to derive datasets 
+             from the original Datasaurus is detailed in "Same Stats, Different Graphs: Generating 
+             Datasets with Varied Appearance and Identical Statistics through Simulated Annealing" 
+             <http://dx.doi.org/10.1145/3025453.3025912>.
 Depends: R (>= 3.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
