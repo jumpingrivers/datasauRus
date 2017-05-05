@@ -4,12 +4,39 @@
 \name{twelve_from_slant_alternate_wide}
 \alias{twelve_from_slant_alternate_wide}
 \title{Twelve From Slant Alternate (wide) data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 182 rows and 24 columns.}
+\format{A data frame with 182 rows and 24 variables:
+\itemize{
+\item \strong{bullseye_x}: x-values for the \code{bullseye} dataset
+\item \strong{bullseye_y}: y-values for the \code{bullseye} dataset
+\item \strong{circle_x}: x-values for the \code{circle} dataset
+\item \strong{circle_y}: y-values for the \code{circle} dataset
+\item \strong{dots_x}: x-values for the \code{dots} dataset
+\item \strong{dots_y}: y-values for the \code{dots} dataset
+\item \strong{h_lines_x}: x-values for the \code{h_lines} dataset
+\item \strong{h_lines_y}: y-values for the \code{h_lines} dataset
+\item \strong{high_lines_x}: x-values for the \code{high_lines} dataset
+\item \strong{high_lines_y}: y-values for the \code{high_lines} dataset
+\item \strong{slant_x}: x-values for the \code{slant} dataset
+\item \strong{slant_y}: y-values for the \code{slant} dataset
+\item \strong{slant_down_x}: x-values for the \code{slant_down} dataset
+\item \strong{slant_down_y}: y-values for the \code{slant_down} dataset
+\item \strong{slant_up_x}: x-values for the \code{slant_up} dataset
+\item \strong{slant_up_y}: y-values for the \code{slant_up} dataset
+\item \strong{star_x}: x-values for the \code{star} dataset
+\item \strong{star_y}: y-values for the \code{star} dataset
+\item \strong{v_lines_x}: x-values for the \code{v_lines} dataset
+\item \strong{v_lines_y}: y-values for the \code{v_lines} dataset
+\item \strong{wide_lines_x}: x-values for the \code{wide_lines} dataset
+\item \strong{wide_lines_y}: y-values for the \code{wide_lines} dataset
+\item \strong{x_shape_x}: x-values for the \code{x_shape} dataset
+\item \strong{x_shape_y}: y-values for the \code{x_shape} dataset
+}}
 \usage{
-data(twelve_from_slant_alternate_wide)
+twelve_from_slant_alternate_wide
 }
 \description{
-Twelve From Slant Alternate (wide) data
+A dataset demonstrating the utility of visualization. These 12 datasets are equal in non-parametric measures: median,
+interquartile rante, and Spearman's rank correlation.
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

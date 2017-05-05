@@ -4,12 +4,18 @@
 \name{twelve_from_slant_alternate_long}
 \alias{twelve_from_slant_alternate_long}
 \title{Twelve From Slant Alternate (long) data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2184 rows and 3 columns.}
+\format{A data frame with 2184 rows and 3 variables:
+\itemize{
+\item \strong{dataset}: the dataset the data are from
+\item \strong{x}: x-values
+\item \strong{y}: y-values
+}}
 \usage{
-data(twelve_from_slant_alternate_long)
+twelve_from_slant_alternate_long
 }
 \description{
-Twelve From Slant Alternate (long) data
+A dataset demonstrating the utility of visualization. These 12 datasets are equal in non-parametric measures: median,
+interquartile rante, and Spearman's rank correlation.
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
