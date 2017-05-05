@@ -1,10 +1,15 @@
-#' Datasaurus.
+#' datasauRus
+#' @example inst/examples/datasauRus.R
 #'
-#' @name Datasaurus
+#' @name datasauRus
 #' @docType package
 NULL
 
-#'Box Plots data
+#'Box plot data
+#'
+#'This dataset is the box plot data produced by Matjeka &
+#'Fitzmaurice to demonstrate applicability of their process.
+#'
 #'@docType data
 #'@name box_plots
 #'@usage data(box_plots)
@@ -14,6 +19,8 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#' @example inst/examples/box_plots.R
+
 "box_plots"
 
 #'Datasaurus Dozen (wide) data
