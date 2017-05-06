@@ -15,7 +15,7 @@ twelve_from_slant_alternate_long
 }
 \description{
 A dataset demonstrating the utility of visualization. These 12 datasets are equal in non-parametric measures: median,
-interquartile rante, and Spearman's rank correlation.
+interquartile range, and Spearman's rank correlation.
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

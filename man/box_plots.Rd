@@ -4,12 +4,20 @@
 \name{box_plots}
 \alias{box_plots}
 \title{Box Plots data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2484 rows and 6 columns.}
+\format{A data frame with 2484 rows and 6 variables:
+\itemize{
+\item \strong{left}: data pulled to the left
+\item \strong{lines}: data with arbitrary spikes along a range
+\item \strong{normal}: normally distributed data
+\item \strong{right}: data pulled to the right
+\item \strong{split}: split data
+}}
 \usage{
-data(box_plots)
+box_plots
 }
 \description{
-Box Plots data
+A dataset demonstrating the utility of visualization. There are five different datasets
+that all create the same boxplots.
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
