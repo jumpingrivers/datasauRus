@@ -23,7 +23,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
-#' @example inst/examples/box_plots.R inst/examples/box_plots_base.R
+#' @example inst/examples/box_plots.R
 "box_plots"
 
 #'Datasaurus Dozen (wide) data
