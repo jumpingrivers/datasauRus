@@ -18,6 +18,14 @@ A dataset demonstrating Simpson's Paradox with a strongly positively correlated 
 and a dataset with the same positive correlation as \code{simpson_1}, but where individual groups have a
 strong negative correlation (\code{simpson_2}).
 }
+\examples{
+if(require(ggplot2)){
+  ggplot(simpsons_paradox, aes(x=x, y=y, colour=dataset))+
+    geom_point()+
+    theme(legend.position = "none")+
+    facet_wrap(~dataset, ncol=3)
+}
+}
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
 Same Stats, Different Graphs: Generating Datasets with

@@ -100,6 +100,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/simpsons_paradox_wide.R
 "simpsons_paradox_wide"
 
 #'Simpsons Paradox data
@@ -118,6 +119,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/simpsons_paradox.R
 "simpsons_paradox"
 
 #'Twelve From Slant Alternate (long) data
@@ -173,6 +175,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/twelve_from_slant_alternate_wide.R
 "twelve_from_slant_alternate_wide"
 
 #'Twelve From Slant (long) data
@@ -228,4 +231,5 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/twelve_from_slant_wide.R
 "twelve_from_slant_wide"
