@@ -9,7 +9,7 @@ NULL
 #'A dataset demonstrating the utility of visualization. There are five different datasets
 #'that all create the same boxplots.
 #'@name box_plots
-#'@format A data frame with 2484 rows and 6 variables:
+#'@format A data frame with 2484 rows and 5 variables:
 #'* **left**: data pulled to the left
 #'* **lines**: data with arbitrary spikes along a range
 #'* **normal**: normally distributed data
@@ -137,6 +137,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/twelve_from_slant_alternate_long.R
 "twelve_from_slant_alternate_long"
 
 #'Twelve From Slant Alternate (wide) data
@@ -193,6 +194,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/twelve_from_slant_long.R
 "twelve_from_slant_long"
 
 #'Twelve From Slant (wide) data

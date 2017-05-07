@@ -8,7 +8,7 @@ datashapetests<-function(df, ncols, nrows, uniquecol=NULL, nuniques=NULL){
 }
 
 test_that("box_plots is correctly shaped",{
-  datashapetests(box_plots,6,2484)
+  datashapetests(box_plots,5,2484)
 })
 
 test_that("datasaurus_dozen is correctly shaped",{

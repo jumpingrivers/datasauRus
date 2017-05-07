@@ -4,7 +4,7 @@
 \name{box_plots}
 \alias{box_plots}
 \title{Box Plots data}
-\format{A data frame with 2484 rows and 6 variables:
+\format{A data frame with 2484 rows and 5 variables:
 \itemize{
 \item \strong{left}: data pulled to the left
 \item \strong{lines}: data with arbitrary spikes along a range

@@ -17,6 +17,15 @@ twelve_from_slant_alternate_long
 A dataset demonstrating the utility of visualization. These 12 datasets are equal in non-parametric measures: median,
 interquartile range, and Spearman's rank correlation.
 }
+\examples{
+if(require(ggplot2)){
+  ggplot(twelve_from_slant_alternate_long, aes(x=x, y=y, colour=dataset))+
+    geom_point()+
+    theme_void()+
+    theme(legend.position = "none")+
+    facet_wrap(~dataset, ncol=3)
+}
+}
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
 Same Stats, Different Graphs: Generating Datasets with

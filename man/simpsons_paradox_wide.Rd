@@ -19,6 +19,23 @@ A dataset demonstrating Simpson's Paradox with a strongly positively correlated 
 and a dataset with the same positive correlation as \code{simpson_1}, but where individual groups have a
 strong negative correlation (\code{simpson_2}).
 }
+\examples{
+#save current settings
+state <- par("mar", "mfrow")
+
+par(mfrow = c(1, 2))
+
+plot(simpsons_paradox_wide[["simpson_1_x"]],
+     simpsons_paradox_wide[["simpson_1_y"]],
+     xlab = "x", ylab = "y", main = "Simpson's Paradox 1")
+
+plot(simpsons_paradox_wide[["simpson_2_x"]],
+     simpsons_paradox_wide[["simpson_2_y"]],
+     xlab = "x", ylab = "y", main = "Simpson's Paradox 2")
+
+#reset settings
+par(state)
+}
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
 Same Stats, Different Graphs: Generating Datasets with
