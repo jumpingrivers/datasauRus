@@ -4,9 +4,16 @@
 \name{box_plots}
 \alias{box_plots}
 \title{Box plot data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2484 rows and 6 columns.}
+\format{A data frame with 2484 rows and 5 variables:
+\itemize{
+\item \strong{left}: data pulled to the left
+\item \strong{lines}: data with arbitrary spikes along a range
+\item \strong{normal}: normally distributed data
+\item \strong{right}: data pulled to the right
+\item \strong{split}: split data
+}}
 \usage{
-data(box_plots)
+box_plots
 }
 \description{
 This dataset is the box plot data produced by Matjeka &
@@ -15,6 +22,29 @@ Fitzmaurice to demonstrate applicability of their process.
 \examples{
 summary(box_plots)
 
+## base plot
+
+#save current settings
+state <- par("mar", "mfrow")
+
+par(mfrow = c(5, 2), mar=c(1,2,2,1))
+
+nms <- names(box_plots)
+
+for (i in 1:5){
+  nm <- nms[i]
+  hist(box_plots[[nms[i]]],
+       breaks = 100,
+       main = nm)
+  boxplot(box_plots[[nms[i]]],
+          horizontal = TRUE)
+}
+
+
+#reset settings
+par(state)
+
+## ggplot
 if(require(ggplot2)){
   ggplot(box_plots, aes(x=left))+
     geom_density()

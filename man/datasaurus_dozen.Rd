@@ -4,12 +4,27 @@
 \name{datasaurus_dozen}
 \alias{datasaurus_dozen}
 \title{Datasaurus Dozen data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1846 rows and 3 columns.}
+\format{A data frame with 1846 rows and 3 variables:
+\itemize{
+\item \strong{dataset}: indicates which dataset the data are from
+\item \strong{x}: x-values
+\item \strong{y}: y-values
+}}
 \usage{
-data(datasaurus_dozen)
+datasaurus_dozen
 }
 \description{
-Datasaurus Dozen data
+A dataset demonstrating the utility of visualization. These 12 datasets are equal in standard measures: mean,
+standard deviation, and Pearson's correlation.
+}
+\examples{
+if(require(ggplot2)){
+  ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
+    geom_point()+
+    theme_void()+
+    theme(legend.position = "none")+
+    facet_wrap(~dataset, ncol=3)
+}
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

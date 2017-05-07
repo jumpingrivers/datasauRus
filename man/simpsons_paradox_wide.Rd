@@ -4,12 +4,37 @@
 \name{simpsons_paradox_wide}
 \alias{simpsons_paradox_wide}
 \title{Simpsons Paradox (wide) data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 222 rows and 4 columns.}
+\format{A data frame with 222 rows and 4 variables:
+\itemize{
+\item \strong{simpson_1_x}: x-values from the \code{simpson_1} dataset
+\item \strong{simpson_1_y}: y-values from the \code{simpson_1} dataset
+\item \strong{simpson_2_x}: x-values from the \code{simpson_2} dataset
+\item \strong{simpson_2_y}: y-values from the \code{simpson_2} dataset
+}}
 \usage{
-data(simpsons_paradox_wide)
+simpsons_paradox_wide
 }
 \description{
-Simpsons Paradox (wide) data
+A dataset demonstrating Simpson's Paradox with a strongly positively correlated dataset (\code{simpson_1})
+and a dataset with the same positive correlation as \code{simpson_1}, but where individual groups have a
+strong negative correlation (\code{simpson_2}).
+}
+\examples{
+#save current settings
+state <- par("mar", "mfrow")
+
+par(mfrow = c(1, 2))
+
+plot(simpsons_paradox_wide[["simpson_1_x"]],
+     simpsons_paradox_wide[["simpson_1_y"]],
+     xlab = "x", ylab = "y", main = "Simpson's Paradox 1")
+
+plot(simpsons_paradox_wide[["simpson_2_x"]],
+     simpsons_paradox_wide[["simpson_2_y"]],
+     xlab = "x", ylab = "y", main = "Simpson's Paradox 2")
+
+#reset settings
+par(state)
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

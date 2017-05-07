@@ -4,12 +4,27 @@
 \name{simpsons_paradox}
 \alias{simpsons_paradox}
 \title{Simpsons Paradox data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 444 rows and 3 columns.}
+\format{A data frame with 444 rows and 3 variables:
+\itemize{
+\item \strong{dataset}: indicates which of the two datasets the data are from, \code{simpson_1} or \code{simpson_2}
+\item \strong{x}: x-values
+\item \strong{y}: y-values
+}}
 \usage{
-data(simpsons_paradox)
+simpsons_paradox
 }
 \description{
-Simpsons Paradox data
+A dataset demonstrating Simpson's Paradox with a strongly positively correlated dataset (\code{simpson_1})
+and a dataset with the same positive correlation as \code{simpson_1}, but where individual groups have a
+strong negative correlation (\code{simpson_2}).
+}
+\examples{
+if(require(ggplot2)){
+  ggplot(simpsons_paradox, aes(x=x, y=y, colour=dataset))+
+    geom_point()+
+    theme(legend.position = "none")+
+    facet_wrap(~dataset, ncol=3)
+}
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
