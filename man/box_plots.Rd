@@ -3,13 +3,30 @@
 \docType{data}
 \name{box_plots}
 \alias{box_plots}
-\title{Box Plots data}
+\title{Box plot data}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2484 rows and 6 columns.}
 \usage{
 data(box_plots)
 }
 \description{
-Box Plots data
+This dataset is the box plot data produced by Matjeka &
+Fitzmaurice to demonstrate applicability of their process.
+}
+\examples{
+summary(box_plots)
+
+if(require(ggplot2)){
+  ggplot(box_plots, aes(x=left))+
+    geom_density()
+  ggplot(box_plots, aes(x=lines))+
+    geom_density()
+  ggplot(box_plots, aes(x=normal))+
+    geom_density()
+  ggplot(box_plots, aes(x=right))+
+    geom_density()
+  ggplot(box_plots, aes(x=split))+
+    geom_density()
+}
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
