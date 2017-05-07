@@ -3,7 +3,7 @@
 datasauRus
 ==========
 
-[![Build Status](https://travis-ci.org/stephlocke/datasauRus.svg?branch=master)](https://travis-ci.org/stephlocke/datasauRus)
+[![Build Status](https://travis-ci.org/stephlocke/datasauRus.svg?branch=master)](https://travis-ci.org/stephlocke/datasauRus)[![Coverage Status](https://coveralls.io/repos/github/stephlocke/datasauRus/badge.svg?branch=master)](https://coveralls.io/github/stephlocke/datasauRus?branch=master)
 
 This package wraps the awesome Datasaurus Dozen dataset.
 
