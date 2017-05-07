@@ -3,7 +3,7 @@
 \docType{data}
 \name{box_plots}
 \alias{box_plots}
-\title{Box Plots data}
+\title{Box plot data}
 \format{A data frame with 2484 rows and 5 variables:
 \itemize{
 \item \strong{left}: data pulled to the left
@@ -16,30 +16,8 @@
 box_plots
 }
 \description{
-A dataset demonstrating the utility of visualization. There are five different datasets
-that all create the same boxplots.
-}
-\examples{
-#save current settings
-state <- par("mar", "mfrow")
-
-par(mfrow = c(5, 2), mar=c(1,2,2,1))
-
-nms <- names(box_plots)
-
-for (i in 1:5){
-  nm <- nms[i]
-  hist(box_plots[[nms[i]]],
-     breaks = 100,
-     main = nm)
-  boxplot(box_plots[[nms[i]]],
-          horizontal = TRUE)
-}
-
-
-#reset settings
-par(state)
-
+This dataset is the box plot data produced by Matjeka &
+Fitzmaurice to demonstrate applicability of their process.
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

@@ -1,13 +1,15 @@
-#' Datasaurus.
+#' datasauRus
+#' @example inst/examples/datasauRus.R
 #'
-#' @name Datasaurus
+#' @name datasauRus
 #' @docType package
 NULL
 
-#'Box Plots data
+#'Box plot data
 #'
-#'A dataset demonstrating the utility of visualization. There are five different datasets
-#'that all create the same boxplots.
+#'This dataset is the box plot data produced by Matjeka &
+#'Fitzmaurice to demonstrate applicability of their process.
+#'
 #'@name box_plots
 #'@format A data frame with 2484 rows and 5 variables:
 #'* **left**: data pulled to the left
@@ -21,7 +23,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
-#'@example inst/examples/box_plots_base.R
+#' @example inst/examples/box_plots.R inst/examples/box_plots_base.R
 "box_plots"
 
 #'Datasaurus Dozen (wide) data
