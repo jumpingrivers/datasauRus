@@ -18,3 +18,7 @@ purrr::walk(files, function(x){
   assign(nm, .dat)
   save(list = nm, file = paste0("data/",nm,".rda"))
 })
+
+# remove box_plots rownames
+box_plots <- box_plots[,-1]
+save(box_plots, file = "data/box_plots.rda")

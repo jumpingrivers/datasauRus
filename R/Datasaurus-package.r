@@ -21,6 +21,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/box_plots_base.R
 "box_plots"
 
 #'Datasaurus Dozen (wide) data
@@ -61,6 +62,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/datasaurus_dozen_wide.R
 "datasaurus_dozen_wide"
 
 #'Datasaurus Dozen data
@@ -78,6 +80,7 @@ NULL
 #'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #'Conference on Human Factors in Computing Systems._
 #' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'@example inst/examples/datasaurus_dozen.R
 "datasaurus_dozen"
 
 #'Simpsons Paradox (wide) data
