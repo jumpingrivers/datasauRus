@@ -1,8 +1,4 @@
-## datasauRus 0.1.1
-
-* Adds examples and generally boosts the documentation
-
-## datasauRus 0.1.0
+## datasauRus 0.1.2
 
 * First release, contains datasaurus datasets
 
