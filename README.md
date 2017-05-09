@@ -3,7 +3,7 @@
 datasauRus
 ==========
 
-[![CRAN version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus)[![Build Status](https://travis-ci.org/stephlocke/datasauRus.svg?branch=master)](https://travis-ci.org/stephlocke/datasauRus)
+[![CRAN version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus) [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html) [![Build Status](https://travis-ci.org/stephlocke/datasauRus.svg?branch=master)](https://travis-ci.org/stephlocke/datasauRus)
 
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus Dozen show us why visualisation is important -- summary statistics can be the same but distributions can be very different. In short, this package gives a fun alternative to [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), available in R as `anscombe`.
 
