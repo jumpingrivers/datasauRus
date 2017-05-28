@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-This package wraps the awesome Datasaurus Dozen dataset.
+This package wraps the awesome Datasaurus Dozen dataset, which contains [13](http://www.phrases.org.uk/meanings/Bakers-dozen.html) sets of x-y data. Each sub-dataset has five statistics that are (almost) the same in each case. (These are the mean of x, mean of y, standard deviation of x, standard deviation of y, and Pearson correlation between x and y). However, scatter plots reveal that each sub-dataset looks very different. The dataset is intended to be used to teach students that it is important to plot their own datasets, rather than relying only on statistics.
 
 The Datasaurus was created by Alberto Cairo in this great [blog post](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html).
 
@@ -22,16 +22,34 @@ In the paper, Justin and George simulate a variety of datasets that the same sum
 This package looks to make these datasets available for use as an advanced [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), available in R as `anscombe`.
 
 ## Usage
-You can use the package to produce Anscombe-style plots and more.
+
+To see that statistics are (almost) the same for each sub-dataset, you can use `dplyr`.
+
+```{r}
+library(datasauRus)
+if(requireNamespace("dplyr")){
+  suppressPackageStartupMessages(library(dplyr))
+  datasaurus_dozen %>% 
+    group_by(dataset) %>% 
+    summarize(
+      mean_x    = mean(x),
+      mean_y    = mean(y),
+      std_dev_x = sd(x),
+      std_dev_y = sd(y),
+      corr_x_y  = cor(x, y)
+    )
+}
+```
+
+To see that each sub-dataset looks very different, you can draw scatter plots.
 
 ```{r fig.height=12, fig.width=9}
-if(require(ggplot2)){
-library(ggplot2)
-library(datasauRus)
-ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
-  geom_point()+
-  theme_void()+
-  theme(legend.position = "none")+
-  facet_wrap(~dataset, ncol=3)
+if(requireNamespace("ggplot2")){
+  library(ggplot2)
+  ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
+    geom_point()+
+    theme_void()+
+    theme(legend.position = "none")+
+    facet_wrap(~dataset, ncol=3)
 }
 ```
