@@ -8,6 +8,6 @@
 ^data-raw$
 ^cran-comments\.md$
 ^CONTRIBUTING\.md$
-^C:\Users\steph\Dropbox\Locke Data\Packages\Datasaurus\docs$
+docs$
 ^_pkgdown\.yml$
-^C:\Users\steph\Dropbox\Locke Data\Packages\packages\datasauRus$
+
