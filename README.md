@@ -7,7 +7,7 @@
 version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus)
 [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html)
 [![Build
-Status](https://travis-ci.org/stephlocke/datasauRus.svg?branch=master)](https://travis-ci.org/stephlocke/datasauRus)
+Status](https://travis-ci.org/lockedata/datasauRus.svg?branch=master)](https://travis-ci.org/lockedata/datasauRus)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
