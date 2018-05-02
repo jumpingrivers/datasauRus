@@ -83,14 +83,14 @@ test()
 #> 
 / |   0       | datasets
 - |   1       | datasets
-/ |   8       | datasets
-v |  22       | datasets [0.5 s]
+\ |  10       | datasets
+v |  22       | datasets [0.4 s]
 #> 
 / |   0       | Raw files
 v |   1       | Raw files
 #> 
 #> == Results =======================================================================
-#> Duration: 1.1 s
+#> Duration: 1.2 s
 #> 
 #> OK:       23
 #> Failed:   0
@@ -103,9 +103,9 @@ v |   1       | Raw files
 ### Code of Conduct
 
 Anyone getting involved in this package agrees to our [Code of
-Conduct](CONDUCT.md). If someone is breaking the Will Wheaton rule aka
-*Don’t be a dick*, or breaking the Code of Conduct, please let me know
-at <steph@itsalocke.com>
+Conduct](CONDUCT.md). If someone is breaking the [Will Wheaton rule aka
+*Don’t be a dick*](https://dontbeadickday.com/), or breaking the Code of
+Conduct, please let me know at <steph@itsalocke.com>
 
 ### Bug reports
 
