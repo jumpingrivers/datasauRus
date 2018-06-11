@@ -25,9 +25,8 @@ post](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-su
 The other Dozen were generated using simulated annealing and the process
 is described in the paper [Same Stats, Different Graphs: Generating
 Datasets with Varied Appearance and Identical Statistics through
-Simulated
-Annealing](https://www.autodeskresearch.com/publications/samestats) by
-Justin Matejka and George Fitzmaurice.
+Simulated Annealing](https://doi.org/10.1145/3025453.3025912) by Justin
+Matejka and George Fitzmaurice.
 
 In the paper, Justin and George simulate a variety of datasets that the
 same summary statistics to the Datasaurus but have very different
@@ -79,18 +78,39 @@ test()
 #> 
 #>     setup
 #> Testing datasauRus
-#> v |  OK F W S | Context
+#> v | OK F W S | Context
 #> 
-/ |   0       | datasets
-- |   1       | datasets
-\ |  10       | datasets
-v |  22       | datasets [0.4 s]
+/ |  0       | datasets
+- |  1       | datasets
+\ |  2       | datasets
+| |  3       | datasets
+/ |  4       | datasets
+- |  5       | datasets
+\ |  6       | datasets
+| |  7       | datasets
+/ |  8       | datasets
+- |  9       | datasets
+\ | 10       | datasets
+| | 11       | datasets
+/ | 12       | datasets
+- | 13       | datasets
+\ | 14       | datasets
+| | 15       | datasets
+/ | 16       | datasets
+- | 17       | datasets
+\ | 18       | datasets
+| | 19       | datasets
+/ | 20       | datasets
+- | 21       | datasets
+\ | 22       | datasets
+v | 22       | datasets [0.2 s]
 #> 
-/ |   0       | Raw files
-v |   1       | Raw files
+/ |  0       | Raw files
+- |  1       | Raw files
+v |  1       | Raw files
 #> 
-#> == Results =======================================================================
-#> Duration: 1.2 s
+#> == Results ============================================================================
+#> Duration: 0.4 s
 #> 
 #> OK:       23
 #> Failed:   0
@@ -127,7 +147,7 @@ why you think it’ll improve the package.
 
 We really want people to contribute to the package. A great way to start
 doing this is to look at the [help
-wanted](https://github.com/stephlocke/datasauRus/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+wanted](https://github.com/lockedata/datasauRus/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted+%3Araised_hand%3A%22)
 issues and/or contribute an example.
 
 Examples for this package are done in base R or with ggplot2 as an
