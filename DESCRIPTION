@@ -31,7 +31,7 @@ Suggests: covr,
     ggplot2,
     dplyr
 VignetteBuilder: knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/lockedata/datasauRus
 BugReports: https://github.com/lockedata/datasauRus/issues

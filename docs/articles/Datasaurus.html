@@ -15,7 +15,7 @@
 <![endif]--><link href="../lockedata.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container template-vignette">
+    <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -24,12 +24,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">datasauRus</a>
+      <a class="navbar-brand" href="../index.html"></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="..//index.html">
+  <a href="../index.html">
     <span class="fa fa-home fa-lg"></span>
      
   </a>
@@ -50,12 +50,12 @@
   </ul>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/stephlocke/datasauRus">
+  <a href="https://github.com/lockedata/datasauRus">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -70,18 +70,21 @@
 
       
       </header><div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1>The Datasaurus data package</h1>
                         <h4 class="author">Steph Locke</h4>
             
-            <h4 class="date">2017-08-04</h4>
-          </div>
+            <h4 class="date">2018-07-09</h4>
+      
+      <small class="dont-index">Source: <a href="https://github.com/lockedata/datasauRus/blob/master/vignettes/Datasaurus.Rmd"><code>vignettes/Datasaurus.Rmd</code></a></small>
+      <div class="hidden name"><code>Datasaurus.Rmd</code></div>
+
+    </div>
 
     
     
-<div class="contents">
-<p>This package wraps the awesome Datasaurus Dozen dataset.</p>
+<p>This package wraps the awesome Datasaurus Dozen dataset, which contains <a href="http://www.phrases.org.uk/meanings/Bakers-dozen.html">13</a> sets of x-y data. Each sub-dataset has five statistics that are (almost) the same in each case. (These are the mean of x, mean of y, standard deviation of x, standard deviation of y, and Pearson correlation between x and y). However, scatter plots reveal that each sub-dataset looks very different. The dataset is intended to be used to teach students that it is important to plot their own datasets, rather than relying only on statistics.</p>
 <p>The Datasaurus was created by Alberto Cairo in this great <a href="http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html">blog post</a>.</p>
 <p>Datasaurus shows us why visualisation is important, not just summary statistics.</p>
 <p>He’s been subsequently made even more famous in the paper <a href="https://www.autodeskresearch.com/publications/samestats">Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing</a> by Justin Matejka and George Fitzmaurice.</p>
@@ -90,19 +93,48 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
-<p>You can use the package to produce Anscombe-style plots and more.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">if(<span class="kw">require</span>(ggplot2)){
-<span class="kw">library</span>(ggplot2)
-<span class="kw">library</span>(datasauRus)
-<span class="kw">ggplot</span>(datasaurus_dozen, <span class="kw">aes</span>(<span class="dt">x=</span>x, <span class="dt">y=</span>y, <span class="dt">colour=</span>dataset))+
-<span class="st">  </span><span class="kw">geom_point</span>()+
-<span class="st">  </span><span class="kw">theme_void</span>()+
-<span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>)+
-<span class="st">  </span><span class="kw">facet_wrap</span>(~dataset, <span class="dt">ncol=</span><span class="dv">3</span>)
-}</code></pre></div>
-<pre><code>## Loading required package: ggplot2</code></pre>
-<p><img src="Datasaurus_files/figure-html/unnamed-chunk-1-1.png" width="864"></p>
-</div>
+<p>To see that statistics are (almost) the same for each sub-dataset, you can use <code>dplyr</code>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(datasauRus)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="cf">if</span>(<span class="kw">requireNamespace</span>(<span class="st">"dplyr"</span>)){</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">  <span class="kw">suppressPackageStartupMessages</span>(<span class="kw">library</span>(dplyr))</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">  datasaurus_dozen <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">    </span><span class="kw">group_by</span>(dataset) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="st">    </span><span class="kw">summarize</span>(</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">      <span class="dt">mean_x    =</span> <span class="kw">mean</span>(x),</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">      <span class="dt">mean_y    =</span> <span class="kw">mean</span>(y),</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">      <span class="dt">std_dev_x =</span> <span class="kw">sd</span>(x),</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">      <span class="dt">std_dev_y =</span> <span class="kw">sd</span>(y),</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">      <span class="dt">corr_x_y  =</span> <span class="kw">cor</span>(x, y)</a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">    )</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">}</a></code></pre></div>
+<pre><code>## Loading required namespace: dplyr</code></pre>
+<pre><code>## # A tibble: 13 x 6
+##    dataset    mean_x mean_y std_dev_x std_dev_y corr_x_y
+##    &lt;chr&gt;       &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+##  1 away         54.3   47.8      16.8      26.9  -0.0641
+##  2 bullseye     54.3   47.8      16.8      26.9  -0.0686
+##  3 circle       54.3   47.8      16.8      26.9  -0.0683
+##  4 dino         54.3   47.8      16.8      26.9  -0.0645
+##  5 dots         54.3   47.8      16.8      26.9  -0.0603
+##  6 h_lines      54.3   47.8      16.8      26.9  -0.0617
+##  7 high_lines   54.3   47.8      16.8      26.9  -0.0685
+##  8 slant_down   54.3   47.8      16.8      26.9  -0.0690
+##  9 slant_up     54.3   47.8      16.8      26.9  -0.0686
+## 10 star         54.3   47.8      16.8      26.9  -0.0630
+## 11 v_lines      54.3   47.8      16.8      26.9  -0.0694
+## 12 wide_lines   54.3   47.8      16.8      26.9  -0.0666
+## 13 x_shape      54.3   47.8      16.8      26.9  -0.0656</code></pre>
+<p>To see that each sub-dataset looks very different, you can draw scatter plots.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="cf">if</span>(<span class="kw">requireNamespace</span>(<span class="st">"ggplot2"</span>)){</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">  <span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">  <span class="kw">ggplot</span>(datasaurus_dozen, <span class="kw">aes</span>(<span class="dt">x=</span>x, <span class="dt">y=</span>y, <span class="dt">colour=</span>dataset))<span class="op">+</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">    </span><span class="kw">geom_point</span>()<span class="op">+</span></a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">    </span><span class="kw">theme_void</span>()<span class="op">+</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="st">    </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">"none"</span>)<span class="op">+</span></a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="st">    </span><span class="kw">facet_wrap</span>(<span class="op">~</span>dataset, <span class="dt">ncol=</span><span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">}</a></code></pre></div>
+<pre><code>## Loading required namespace: ggplot2</code></pre>
+<p><img src="Datasaurus_files/figure-html/unnamed-chunk-2-1.png" width="864"></p>
 </div>
   </div>
 
@@ -120,7 +152,7 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Steph Locke, Lucy D'Agostino McGowan.</p>
+  <p>Developed by Steph Locke, Lucy D'Agostino McGowan, <a href="https://itsalocke.com/"><img src="https://github.com/lockedata.png" height="24"></a>.</p>
 </div>
 
 <div class="pkgdown">
@@ -129,6 +161,8 @@
 
       </footer>
 </div>
+
+  
 
   </body>
 </html>

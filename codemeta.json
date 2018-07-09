@@ -162,9 +162,18 @@
   ],
   "releaseNotes": "https://github.com/lockedata/datasaurus/blob/master/NEWS.md",
   "readme": "https://github.com/lockedata/datasauRus/blob/master/README.md",
-  "fileSize": "563.53KB",
+  "fileSize": "587.196KB",
   "contIntegration": "https://travis-ci.org/lockedata/datasauRus",
   "developmentStatus": "http://www.repostatus.org/#active",
   "relatedLink": "https://CRAN.R-project.org/package=datasauRus",
-  "keywords": ["r", "datasets", "datasaurus", "anscombesquartet", "r-package", "rstats", "datasaurus-dozen", "summary-statistics"]
+  "keywords": [
+    "r",
+    "datasets",
+    "datasaurus",
+    "anscombesquartet",
+    "r-package",
+    "rstats",
+    "datasaurus-dozen",
+    "summary-statistics"
+  ]
 }

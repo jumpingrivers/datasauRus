@@ -2,3 +2,7 @@ url: https://itsalocke.com/datasauRus
 template:
   package: lockedatapkg
   default_assets: false
+authors:
+  Locke Data:
+    href: "https://itsalocke.com/"
+    html: "<img src='https://github.com/lockedata.png' height=24>"
