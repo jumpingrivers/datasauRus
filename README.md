@@ -32,7 +32,7 @@ In the paper, Justin and George simulate a variety of datasets that the
 same summary statistics to the Datasaurus but have very different
 distributions.
 
-![](https://github.com/stephlocke/lazyCDN/blob/master/DinoSequential.gif?raw=true)
+![](https://github.com/lockedata/lazyCDN/blob/master/DinoSequential.gif?raw=true)
 
 ## Install
 
@@ -46,7 +46,7 @@ You can get the latest development version from GitHub, so use
 `devtools` to install the package
 
 ``` r
-devtools::install_github("stephlocke/datasauRus")
+devtools::install_github("lockedata/datasauRus")
 ```
 
 ## Usage
@@ -65,59 +65,6 @@ ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
 
 ![](README/README-unnamed-chunk-2-1.png)<!-- -->
 
-## Tests
-
-``` r
-library(devtools)
-test()
-#> Loading datasauRus
-#> Loading required package: testthat
-#> 
-#> Attaching package: 'testthat'
-#> The following object is masked from 'package:devtools':
-#> 
-#>     setup
-#> Testing datasauRus
-#> v | OK F W S | Context
-#> 
-/ |  0       | datasets
-- |  1       | datasets
-\ |  2       | datasets
-| |  3       | datasets
-/ |  4       | datasets
-- |  5       | datasets
-\ |  6       | datasets
-| |  7       | datasets
-/ |  8       | datasets
-- |  9       | datasets
-\ | 10       | datasets
-| | 11       | datasets
-/ | 12       | datasets
-- | 13       | datasets
-\ | 14       | datasets
-| | 15       | datasets
-/ | 16       | datasets
-- | 17       | datasets
-\ | 18       | datasets
-| | 19       | datasets
-/ | 20       | datasets
-- | 21       | datasets
-\ | 22       | datasets
-v | 22       | datasets [0.2 s]
-#> 
-/ |  0       | Raw files
-- |  1       | Raw files
-v |  1       | Raw files
-#> 
-#> == Results ============================================================================
-#> Duration: 0.4 s
-#> 
-#> OK:       23
-#> Failed:   0
-#> Warnings: 0
-#> Skipped:  0
-```
-
 ## Contributing to the package
 
 ### Code of Conduct
@@ -130,7 +77,7 @@ Conduct, please let me know at <steph@itsalocke.com>
 ### Bug reports
 
 When you file a [bug
-report](https://github.com/stephlocke/datasauRus/issues), please spend
+report](https://github.com/lockedata/datasauRus/issues), please spend
 some time making it easy for us to follow and reproduce. The more time
 you spend on making the bug report coherent, the more time we can
 dedicate to investigate the bug as opposed to the bug report.
@@ -139,7 +86,7 @@ dedicate to investigate the bug as opposed to the bug report.
 
 Got an idea for how we can improve the package? Awesome stuff\!
 
-Please [raise it](https://github.com/stephlocke/datasauRus/issues) with
+Please [raise it](https://github.com/lockedata/datasauRus/issues) with
 some succinct information on expected behaviour of the enhancement and
 why you think it’ll improve the package.
 

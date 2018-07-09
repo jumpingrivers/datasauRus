@@ -4,15 +4,15 @@
 Anyone getting involved in this package agrees to our [Code of Conduct](CONDUCT.md). If someone is breaking the Will Wheaton rule aka Don't be a dick, or breaking the Code of Conduct, please let me know at steph@itsalocke.com
 
 ## Bug reports
-When you file a [bug report](https://github.com/stephlocke/datasauRus/issues), please spend some time making it easy for us to follow and reproduce. The more time you spend on making the bug report coherent, the more time we can dedicate to investigate the bug as opposed to the bug report.
+When you file a [bug report](https://github.com/lockedata/datasauRus/issues), please spend some time making it easy for us to follow and reproduce. The more time you spend on making the bug report coherent, the more time we can dedicate to investigate the bug as opposed to the bug report.
 
 ## Ideas
 Got an idea for how we can improve the package? Awesome stuff!
 
-Please [raise it](https://github.com/stephlocke/datasauRus/issues) with some succinct information on expected behaviour of the enhancement and why you think it'll improve the package.
+Please [raise it](https://github.com/stephlocke/lockedata/issues) with some succinct information on expected behaviour of the enhancement and why you think it'll improve the package.
 
 ## Package development
-We really want people to contribute to the package. A great way to start doing this is to look at the [help wanted](https://github.com/stephlocke/datasauRus/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) issues and/or contribute an example.
+We really want people to contribute to the package. A great way to start doing this is to look at the [help wanted](https://github.com/lockedata/datasauRus/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted+%3Araised_hand%3A%22) issues and/or contribute an example.
 
 Examples for this package are done in base R or with ggplot2 as an optional example, using the structure:
 
