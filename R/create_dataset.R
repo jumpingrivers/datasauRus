@@ -51,19 +51,8 @@ perturb <- function(df, initial, target,
   df[row, "y"] <- ym
   return(df)
 
-  }
-
-  # ### python
-  # while True:
-
-
-  #
-  # # set the new data point, and return the set
-  # df['x'][row] = xm
-  # df['y'][row] = ym
-  # return df
-
 }
+
 
 get_points_for_shape <- function(target){
   # these were hard-coded, we don't want that,
@@ -80,4 +69,24 @@ DistancePointLine <- function(px, py, x1, y1, x2, y2){
   #there must be something easy in R
   # closest distance between a point and a group of points
 }
+
+# This function calculates the summary statistics for the given set of points
+# IMO it should be passed by the user, because that's the customizable part
+# but in the examples I can use the same as datasaurus Python code authors
+get_values <- function(df){
+  return(values)
+}
+
+# checks to see if the statistics are still within the acceptable bounds
+# with df1 as the original dataset, and df2 as the one we are testing
+#
+is_error_still_ok <- function(df1, df2, decimals = 2){
+  r1 <- get_values(df1)
+  r2 <- get_values(df2)
+
+  er <- abs(r1 - r2)
+
+  return (any(er > 10^(-decimals)))
+}
+
 
