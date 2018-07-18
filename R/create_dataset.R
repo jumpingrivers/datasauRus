@@ -21,13 +21,12 @@ easeInOutQuad <- function(value){
 #' @param y_bounds bounds on y
 #'
 #' @return new dataset after one round of perturbation
-#' @export
 #'
 #' @examples
 perturb <- function(df, target_df,
                     shake,
-                    allowed_dist = 2,
-                    temp = 0,
+                    allowed_dist,
+                    temp,
                     x_bounds = c(0, 100),
                     y_bounds = c(0, 100)){
   # take one row at random, and move one of the points a bit
@@ -50,9 +49,11 @@ perturb <- function(df, target_df,
     # or, if it is less than our allowed distance
     # or, if we are do_bad, that means we are accpeting it no matter what
     # if one of these conditions are met, jump out of the loop
+    close_or_just_bad_anyway <- (new_dist < old_dist | new_dist < allowed_dist | do_bad)
 
-    cond <- !((new_dist < old_dist | new_dist < allowed_dist | do_bad) &
-              ym > y_bounds[1] & ym < y_bounds[2] & xm > x_bounds[1] & xm < x_bounds[2])
+    inside_bounds <- ym > y_bounds[1] & ym < y_bounds[2] & xm > x_bounds[1] & xm < x_bounds[2]
+
+    cond <- !(close_or_just_bad_anyway & inside_bounds)
   }
   # set the new data point, and return the set
   df[row, "x"] <- xm
@@ -95,25 +96,54 @@ is_error_still_ok <- function(df1, df2, decimals = 2){
   return (!any(er > 10^(-decimals)))
 }
 
+#' Create a dataset
+#'
+#' @description Create a dataset with similar statistics to the initial dataset
+#'  and a shape close to a target dataset.
+#'
+#'@references Matejka, J., & Fitzmaurice, G. (2017).
+#'Same Stats, Different Graphs: Generating Datasets with
+#'Varied Appearance and Identical Statistics through Simulated
+#'Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
+#'Conference on Human Factors in Computing Systems._
+#' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats).
+#'
+#' @param df initial dataset
+#' @param target_df target dataset
+#' @param iters number of iterations
+#' @param decimals allowed difference to the initial statistics
+#' @param shake  maximum amount of movement in each iteration
+#' @param max_temp temperature at the beginning of the simulation
+#' @param min_temp temperature at the end
+#' @param allowed_dist allowed distance of new position to target dataset
+#'
+#' @return new dataset closer to the target one,
+#' but with similar statistics compared to the initial df
+#' @export
+#'
+#' @examples
 create_dataset <- function(df,
                            target_df,
                            iters = 100, decimals = 2, shake = 0.2,
-                           max_temp = 0.4, min_temp = 0){
-  i <- 0
-
-  while(i < iters){
+                           max_temp = 0.4, min_temp = 0,
+                           allowed_dist = 2){
+  df0 <- df
+  pb <- progress::progress_bar$new(total = iters)
+  pb$tick(0)
+  for(i in 0:(iters-1)){
+    pb$tick()
     temp <- (max_temp - min_temp) * easeInOutQuad(((iters-i)/iters)) + min_temp
 
     df2 <- perturb(df, target_df,
                    shake = shake,
-                   allowed_dist = 20, # bigger than original
+                   allowed_dist = allowed_dist, # bigger than original
                    temp = temp,
                    x_bounds = c(0, 100),
                    y_bounds = c(0, 100))
-    if(is_error_still_ok(df, df2, decimals = 1)){
+
+    if(is_error_still_ok(df0, df2, decimals = 1)){
       df <- df2
     }
-    i <- i + 1
   }
   df
 }
