@@ -51,10 +51,8 @@ perturb <- function(df, target_df,
     # or, if we are do_bad, that means we are accpeting it no matter what
     # if one of these conditions are met, jump out of the loop
 
-    if ((new_dist < old_dist | new_dist < allowed_dist | do_bad) &
-        ym > y_bounds[1] & ym < y_bounds[2] & xm > x_bounds[1] & xm < x_bounds[2]){
-        cond <- FALSE
-    }
+    cond <- !((new_dist < old_dist | new_dist < allowed_dist | do_bad) &
+              ym > y_bounds[1] & ym < y_bounds[2] & xm > x_bounds[1] & xm < x_bounds[2])
   }
   # set the new data point, and return the set
   df[row, "x"] <- xm
