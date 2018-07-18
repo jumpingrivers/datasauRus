@@ -3,7 +3,7 @@
 #'
 #' @param df current dataset
 #' @param initial original dataset
-#' @param target name of the target shape
+#' @param target_df target df
 #' @param shake maximum amount of movement in each iteration
 #' @param allowed_dist allowed distance
 #' @param temp current temperature
@@ -14,7 +14,7 @@
 #' @export
 #'
 #' @examples
-perturb <- function(df, initial, target,
+perturb <- function(df, initial, target_df,
                     shake = 0.1,
                     allowed_dist = 2,
                     temp = 0,
@@ -33,10 +33,9 @@ perturb <- function(df, initial, target,
   while(cond){
     xm <- i_xm + rnorm(n = 1)*shake
     ym <- i_ym + rnorm(n = 1)*shake
-    lines <- get_points_for_shape(target)
     # calculate how far the point is from the closest one of these
-    old_dist <- np.min([DistancePointLine(i_xm, i_ym, l[0][0], l[0][1], l[1][0], l[1][1]) for l in lines])
-    new_dist <- np.min([DistancePointLine(xm, ym, l[0][0], l[0][1], l[1][0], l[1][1]) for l in lines])
+    old_dist <- get_distance_to_target(i_xm, i_ym, target_df)
+    new_dist <- get_distance_to_target(xm, ym, target_df)
     # check if the new distance is closer than the old distance
     # or, if it is less than our allowed distance
     # or, if we are do_bad, that means we are accpeting it no matter what
@@ -54,27 +53,30 @@ perturb <- function(df, initial, target,
 }
 
 
-get_points_for_shape <- function(target){
-  # these were hard-coded, we don't want that,
-  # we want to extract lines from an image
-  # therefore not a too complicated image!
-  # or maybe tweak the code so as not to have to use lines.
-  return(lines)
-}
-
 # This function calculates the minimum distance between a point and a line, used
 # to determine if the points are getting closer to the target
 
-DistancePointLine <- function(px, py, x1, y1, x2, y2){
-  #there must be something easy in R
-  # closest distance between a point and a group of points
+get_distance_to_target <- function(px, py, target_df){
+  distances <- purrr::map2_dbl(target_df$x, target_df$y,
+                               get_distance,
+                               x2 = px, x1 = py)
+  min(distances)
+}
+
+get_distance <- function(x1, y1, x2, y2){
+  sqrt((x1-x2)^2 + (y1-y2)^2)
 }
 
 # This function calculates the summary statistics for the given set of points
 # IMO it should be passed by the user, because that's the customizable part
 # but in the examples I can use the same as datasaurus Python code authors
 get_values <- function(df){
-  return(values)
+  c("mean_x" = mean(df$x),
+    "mean_y" = mean(df$y),
+    "sd_x" = sd(df$x),
+    "sd_y" = sd(df$y),
+    "corr" = cor(df$x, df$y, method = "pearson"))
+
 }
 
 # checks to see if the statistics are still within the acceptable bounds
