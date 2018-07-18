@@ -1,8 +1,18 @@
+# from pytweening
+# https://github.com/asweigart/pytweening/blob/74a251a6d1500ac678fc259eb1f9517c6a71a190/pytweening/__init__.py#L156
+easeInOutQuad <- function(value){
+  if (value < 0.5){
+    2 * value^2
+  }else{
+    value <- value * 2 - 1
+    -0.5 * (value*(value-2) - 1)
+  }
+
+}
 
 #' Function doing one round of perturbation
 #'
 #' @param df current dataset
-#' @param initial original dataset
 #' @param target_df target df
 #' @param shake maximum amount of movement in each iteration
 #' @param allowed_dist allowed distance
@@ -14,14 +24,14 @@
 #' @export
 #'
 #' @examples
-perturb <- function(df, initial, target_df,
-                    shake = 0.1,
+perturb <- function(df, target_df,
+                    shake,
                     allowed_dist = 2,
                     temp = 0,
                     x_bounds = c(0, 100),
                     y_bounds = c(0, 100)){
   # take one row at random, and move one of the points a bit
-  row <- sample.int(seq_len(nrow(df)))
+  row <- sample(1:nrow(df), size = 1)
   i_xm <- df[row, "x"]
   i_ym <- df[row, "y"]
 
@@ -40,9 +50,10 @@ perturb <- function(df, initial, target_df,
     # or, if it is less than our allowed distance
     # or, if we are do_bad, that means we are accpeting it no matter what
     # if one of these conditions are met, jump out of the loop
+
     if ((new_dist < old_dist | new_dist < allowed_dist | do_bad) &
-        ym > y_bounds[0] & ym < y_bounds[1] & xm > x_bounds[0] & xm < x_bounds[1]){
-      cond <- FALSE
+        ym > y_bounds[1] & ym < y_bounds[2] & xm > x_bounds[1] & xm < x_bounds[2]){
+        cond <- FALSE
     }
   }
   # set the new data point, and return the set
@@ -53,18 +64,13 @@ perturb <- function(df, initial, target_df,
 }
 
 
-# This function calculates the minimum distance between a point and a line, used
+# This function calculates the minimum distance between a point and other points,
+# used
 # to determine if the points are getting closer to the target
 
 get_distance_to_target <- function(px, py, target_df){
-  distances <- purrr::map2_dbl(target_df$x, target_df$y,
-                               get_distance,
-                               x2 = px, x1 = py)
+  distances <- sqrt((px-target_df$x)^2 + (py-target_df$y)^2)
   min(distances)
-}
-
-get_distance <- function(x1, y1, x2, y2){
-  sqrt((x1-x2)^2 + (y1-y2)^2)
 }
 
 # This function calculates the summary statistics for the given set of points
@@ -88,7 +94,28 @@ is_error_still_ok <- function(df1, df2, decimals = 2){
 
   er <- abs(r1 - r2)
 
-  return (any(er > 10^(-decimals)))
+  return (!any(er > 10^(-decimals)))
 }
 
+create_dataset <- function(df,
+                           target_df,
+                           iters = 100, decimals = 2, shake = 0.2,
+                           max_temp = 0.4, min_temp = 0){
+  i <- 0
 
+  while(i < iters){
+    temp <- (max_temp - min_temp) * easeInOutQuad(((iters-i)/iters)) + min_temp
+
+    df2 <- perturb(df, target_df,
+                   shake = shake,
+                   allowed_dist = 20, # bigger than original
+                   temp = temp,
+                   x_bounds = c(0, 100),
+                   y_bounds = c(0, 100))
+    if(is_error_still_ok(df, df2, decimals = 1)){
+      df <- df2
+    }
+    i <- i + 1
+  }
+  df
+}
