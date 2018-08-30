@@ -75,5 +75,5 @@ information on how to contribute check out [our contributing
 guide](.github/CONTRIBUTING.md).
 
 Please note that this R package is released with a [Contributor Code of
-Conduct](CONDUCT.md). By participating in this package project you agree
-to abide by its terms.
+Conduct](CODE_OF_CONDUCT.md). By participating in this package project
+you agree to abide by its terms.
