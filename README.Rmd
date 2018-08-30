@@ -19,7 +19,11 @@ This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus Dozen s
 
 The original Datasaurus was created by Alberto Cairo in this great [blog post](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html).
 
-The other Dozen were generated using simulated annealing and the process is described in the paper [Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing](https://doi.org/10.1145/3025453.3025912) by Justin Matejka and George Fitzmaurice.
+The other Dozen were generated using simulated annealing and the process
+is described in the paper "Same Stats, Different Graphs: Generating
+Datasets with Varied Appearance and Identical Statistics through
+Simulated Annealing" by Justin
+Matejka and George Fitzmaurice ([open access materials including manuscript and code](https://www.autodeskresearch.com/publications/samestats), [official paper](https://doi.org/10.1145/3025453.3025912)).
 
 In the paper, Justin and George simulate a variety of datasets that the same summary statistics to the Datasaurus but have very different distributions. 
 

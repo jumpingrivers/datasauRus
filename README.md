@@ -23,10 +23,12 @@ The original Datasaurus was created by Alberto Cairo in this great [blog
 post](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html).
 
 The other Dozen were generated using simulated annealing and the process
-is described in the paper [Same Stats, Different Graphs: Generating
+is described in the paper “Same Stats, Different Graphs: Generating
 Datasets with Varied Appearance and Identical Statistics through
-Simulated Annealing](https://doi.org/10.1145/3025453.3025912) by Justin
-Matejka and George Fitzmaurice.
+Simulated Annealing” by Justin Matejka and George Fitzmaurice ([open
+access materials including manuscript and
+code](https://www.autodeskresearch.com/publications/samestats),
+[official paper](https://doi.org/10.1145/3025453.3025912)).
 
 In the paper, Justin and George simulate a variety of datasets that the
 same summary statistics to the Datasaurus but have very different
@@ -55,6 +57,7 @@ You can use the package to produce Anscombe plots and more.
 
 ``` r
 library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 3.5.1
 library(datasauRus)
 ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
   geom_point()+
