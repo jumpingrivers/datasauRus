@@ -1,0 +1,36 @@
+---
+title: "Create new datasauRus datasets"
+author: "Maëlle Salmon"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The Datasaurus data package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Just an example of the use of `create_dataset` for now. Not working at the moment (or well very slowly).
+
+```{r}
+library("datasauRus")
+df <- datasauRus::datasaurus_dozen[datasauRus::datasaurus_dozen$dataset == "star",]
+target_df <- datasauRus::datasaurus_dozen[datasauRus::datasaurus_dozen$dataset == "dino",]
+
+created_df <- datasauRus::create_dataset(df, target_df,
+                                         iters = 20000)
+
+```
+
+Plot results
+
+```{r}
+df$source <- "start"
+target_df$source <- "target"
+created_df$source <- "created"
+all_df <- rbind(df, target_df, created_df)
+library("ggplot2")
+ggplot(all_df) +
+  geom_point(aes(x, y, col = source)) +
+  theme_minimal()
+
+```
