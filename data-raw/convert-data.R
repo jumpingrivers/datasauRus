@@ -20,7 +20,7 @@ purrr::walk(files, function(x){
 })
 
 # remove box_plots rownames
-box_plots <- box_plots[,-1]
+box_plots <- readr::read_tsv("./inst/extdata/BoxPlots.tsv")[,2:6]
 save(box_plots, file = "data/box_plots.rda")
 
 # manual renaming
