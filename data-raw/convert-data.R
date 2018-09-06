@@ -7,7 +7,7 @@ purrr::walk(files, function(x){
 
   #make it slither
   nm <-  gsub("^_+", "", tolower(gsub("([A-Z])", "_\\1", nm)))
-
+  nm <- gsub("\\_\\_", "\\_", nm)
   if (grepl("wide",nm)){
     header1 <- scan(x, nlines = 1, what = character())
     header1 <- paste(header1,c("x","y"),sep="_")
@@ -23,7 +23,4 @@ purrr::walk(files, function(x){
 box_plots <- readr::read_tsv("./inst/extdata/BoxPlots.tsv")[,2:6]
 save(box_plots, file = "data/box_plots.rda")
 
-# manual renaming
-file.remove("data/simpsons_paradox_wide.rda")
-file.rename("data/simpsons_paradox__wide.rda",
-            "data/simpsons_paradox_wide.rda")
+
