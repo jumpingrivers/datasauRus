@@ -1,4 +1,4 @@
-#here is how I converted, we can delete this
+#here is how I converted
 files =  list.files(path = "./inst/extdata",pattern="*.tsv", full.names = TRUE)
 
 purrr::walk(files, function(x){
@@ -22,3 +22,8 @@ purrr::walk(files, function(x){
 # remove box_plots rownames
 box_plots <- box_plots[,-1]
 save(box_plots, file = "data/box_plots.rda")
+
+# manual renaming
+file.remove("data/simpsons_paradox_wide.rda")
+file.rename("data/simpsons_paradox__wide.rda",
+            "data/simpsons_paradox_wide.rda")
