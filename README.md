@@ -34,7 +34,7 @@ In the paper, Justin and George simulate a variety of datasets that the
 same summary statistics to the Datasaurus but have very different
 distributions.
 
-![](https://github.com/lockedata/lazyCDN/blob/master/DinoSequential.gif?raw=true)
+<img src="https://github.com/stephlocke/lazyCDN/blob/master/DinoSequential.gif?raw=true" alt="sequential dino" width="600"/>
 
 ## Install
 
