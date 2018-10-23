@@ -1,8 +1,8 @@
-#save current settings
+# Save current settings
 state <- par("mar", "mfrow")
 
-# plot
-par(mfrow = c(5, 3), mar=c(1,3,3,1))
+# Base R Plots
+par(mfrow = c(5, 3), mar=c(1, 3, 3, 1))
 
 nms <- names(datasaurus_dozen_wide)
 for (i in seq(1, 25, by = 2)){
