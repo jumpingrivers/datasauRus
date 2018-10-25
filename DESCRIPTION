@@ -7,6 +7,7 @@ Authors@R: c(person("Steph", "Locke", email = "stephanie.g.locke@gmail.com", rol
              person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "dtc")),
              person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut")),
              person("Richard", "Cotton", email = "richierocks@gmail.com", role = c("ctb")),
+             person("Tim", "Book", email = "TimothyKBook@gmail.com", role = c("ctb")),
              person("Locke Data", role = c("fnd"))
 			 )
 Description: The Datasaurus Dozen is a set of datasets with the same summary statistics. They 
