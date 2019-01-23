@@ -22,3 +22,6 @@ stages:
   - name: deploy
     # require the branch name to be master (note for PRs this is the base branch name)
     if: branch = master
+
+notifications:
+  webhooks: https://api.netlify.com/build_hooks/5c4857904cc85e017ab90037
