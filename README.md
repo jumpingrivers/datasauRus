@@ -32,7 +32,7 @@ access materials including manuscript and
 code](https://www.autodeskresearch.com/publications/samestats),
 [official paper](https://doi.org/10.1145/3025453.3025912)).
 
-In the paper, Justin and George simulate a variety of datasets that the
+In the paper, Justin and George simulate a variety of datasets that have the
 same summary statistics to the Datasaurus but have very different
 distributions.
 
