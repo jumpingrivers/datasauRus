@@ -13,16 +13,18 @@
 <!-- Bootstrap -->
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous" />
 
 <!-- pkgdown -->
 <link href="pkgdown.css" rel="stylesheet">
 <script src="jquery.sticky-kit.min.js"></script>
 <script src="pkgdown.js"></script>
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -34,8 +36,8 @@
 
 
 
-
 <link href="lockedata.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -55,7 +57,7 @@
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -78,11 +80,10 @@
   <a href="news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/lockedata/datasauRus">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -92,6 +93,7 @@
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -124,7 +126,7 @@
 <a href="#package-development" class="anchor"></a>Package development</h2>
 <p>We really want people to contribute to the package. A great way to start doing this is to look at the <a href="https://github.com/lockedata/datasauRus/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted+%3Araised_hand%3A%22">help wanted</a> issues and/or contribute an example.</p>
 <p>Examples for this package are done in base R or with ggplot2 as an optional example, using the structure:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">require</a></span>(ggplot2)){</a>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span>(<span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span>(ggplot2)){</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#ggplot2 code here</span></a>
 <a class="sourceLine" id="cb1-3" data-line-number="3">}</a></code></pre></div>
 <p>As this is a data package, most of the documentation is sitting in one file (<code>R/Datasaurus-package.R</code>) so we keep the examples in a separate directory (<code>inst/examples</code>).</p>
@@ -151,6 +153,7 @@
 </div>
 
 
+
       <footer>
       <div class="copyright">
   <p>Developed by Steph Locke, Lucy D'Agostino McGowan, <a href='https://itsalocke.com/'><img src='https://github.com/lockedatapublished.png' height=24></a>. </p>
@@ -160,11 +163,14 @@
   <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 
