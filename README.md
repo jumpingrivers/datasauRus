@@ -3,16 +3,16 @@
 
 # datasauRus
 
+<!-- badges: start -->
+
 [![CRAN
 version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus)
 [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html)
-[![Build
-Status](https://travis-ci.org/lockedata/datasauRus.svg?branch=master)](https://travis-ci.org/lockedata/datasauRus)
+[![R-CMD-check](https://github.com/jumpingrivers/datasauRus/workflows/R-CMD-check/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Locke Data
-Slack](https://img.shields.io/badge/Slack-discuss-blue.svg?logo=slack&longCache=true&style=flat)](https://join.slack.com/t/lockedata/shared_invite/enQtMjkwNjY3ODkwMzg2LTI1OGU1NTM3ZGIyZGFiNTdlODI3MzU2N2ZlNDczMjM4M2U2OWVmNDMzZTQ1ZGNlZDQ3MGM2MGVjMjI2MWIyMjI)
+<!-- badges: end -->
 
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus
 Dozen show us why visualisation is important – summary statistics can be
@@ -32,25 +32,39 @@ access materials including manuscript and
 code](https://www.autodeskresearch.com/publications/samestats),
 [official paper](https://doi.org/10.1145/3025453.3025912)).
 
-In the paper, Justin and George simulate a variety of datasets that have the
+In the paper, Justin and George simulate a variety of datasets that the
 same summary statistics to the Datasaurus but have very different
 distributions.
 
-<img src="https://github.com/stephlocke/lazyCDN/blob/master/DinoSequential.gif?raw=true" alt="sequential dino" width="600"/>
+<img src="man/figures/DinoSequential.gif" title="Sequential dinosaur gif" alt="Sequential dinosaur gif" width="600px" />
 
 ## Install
 
-The latest stable version (0.1.2) is available on CRAN
+The latest stable version is available on CRAN
 
 ``` r
 install.packages("datasauRus")
+#> Installing package into '/home/rhian/R/x86_64-pc-linux-gnu-library/4.1'
+#> (as 'lib' is unspecified)
 ```
 
 You can get the latest development version from GitHub, so use
-`devtools` to install the package
+{devtools} to install the package
 
 ``` r
-devtools::install_github("lockedata/datasauRus")
+devtools::install_github("jumpingrivers/datasauRus")
+#> Using github PAT from envvar GITHUB_PAT
+#> Downloading GitHub repo jumpingrivers/datasauRus@HEAD
+#>      checking for file ‘/tmp/RtmpgvFswg/remotes2243740b91509/jumpingrivers-datasauRus-1db1933/DESCRIPTION’ ...  ✓  checking for file ‘/tmp/RtmpgvFswg/remotes2243740b91509/jumpingrivers-datasauRus-1db1933/DESCRIPTION’
+#>   ─  preparing ‘datasauRus’:
+#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘datasauRus_0.1.4.tar.gz’
+#>      
+#> 
+#> Installing package into '/home/rhian/R/x86_64-pc-linux-gnu-library/4.1'
+#> (as 'lib' is unspecified)
 ```
 
 ## Usage
@@ -58,20 +72,20 @@ devtools::install_github("lockedata/datasauRus")
 You can use the package to produce Anscombe plots and more.
 
 ``` r
-library(ggplot2)
-library(datasauRus)
-ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
-  geom_point()+
-  theme_void()+
+library("ggplot2")
+library("datasauRus")
+ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
+  geom_point() +
+  theme_void() +
   theme(legend.position = "none")+
-  facet_wrap(~dataset, ncol=3)
+  facet_wrap(~dataset, ncol = 3)
 ```
 
-![](README/README-unnamed-chunk-2-1.png)<!-- -->
+![](README/README-unnamed-chunk-5-1.png)<!-- -->
 
 ## Contributing to the package
 
-Wanna report a bug or suggest a feature? Great stuff\! For more
+Want to report a bug or suggest a feature? Great stuff! For more
 information on how to contribute check out [our contributing
 guide](.github/CONTRIBUTING.md).
 

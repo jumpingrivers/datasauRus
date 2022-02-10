@@ -1,13 +1,15 @@
 Package: datasauRus
 Title: Datasets from the Datasaurus Dozen
-Version: 0.1.4
-Authors@R: c(person("Steph", "Locke", email = "stephanie.g.locke@gmail.com", role = c( "cre","aut")),
+Version: 0.1.5
+Authors@R: c(person("Rhian", "Davies", email = "rhian@jumpingrivers.com", role = c( "cre","aut")),
+             person("Steph", "Locke", email = "stephanie.g.locke@gmail.com", role = c( "aut")),
              person("Alberto", "Cairo", email = "alberto.cairo@gmail.com", role = c( "dtc")),
              person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "dtc")),
              person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "dtc")),
              person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut")),
              person("Richard", "Cotton", email = "richierocks@gmail.com", role = c("ctb")),
              person("Tim", "Book", email = "TimothyKBook@gmail.com", role = c("ctb")),
+             person("Jumping Rivers", role = c("fnd")),
              person("Locke Data", role = c("fnd"))
 			 )
 Description: The Datasaurus Dozen is a set of datasets with the same summary statistics. They 
@@ -34,5 +36,6 @@ Suggests: covr,
 VignetteBuilder: knitr
 RoxygenNote: 6.1.0.9000
 Roxygen: list(markdown = TRUE)
-URL: https://github.com/lockedata/datasauRus, https://itsalocke.com/datasaurus/
-BugReports: https://github.com/lockedata/datasauRus/issues
+URL: https://github.com/jumpingrivers/datasauRus,
+    https://jumpingrivers.github.io/datasauRus
+BugReports: https://github.com/jumpingrivers/datasauRus/issues

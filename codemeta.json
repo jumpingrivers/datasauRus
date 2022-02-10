@@ -1,23 +1,19 @@
 {
-  "@context": [
-    "https://doi.org/10.5063/schema/codemeta-2.0",
-    "http://schema.org"
-  ],
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "datasauRus",
-  "description": "The Datasaurus Dozen is a set of datasets with the same summary statistics. They \n             retain the same summary statistics despite having radically different distributions.\n             The datasets represent a larger and quirkier object lesson that is typically taught\n             via Anscombe's Quartet (available in the 'datasets' package). Anscombe's Quartet\n             contains four very different distributions with the same summary statistics and as \n             such highlights the value of visualisation in understanding data, over and above\n             summary statistics. As well as being an engaging variant on the Quartet, the data\n             is generated in a novel way. The simulated annealing process used to derive datasets \n             from the original Datasaurus is detailed in \"Same Stats, Different Graphs: Generating \n             Datasets with Varied Appearance and Identical Statistics through Simulated Annealing\" \n             <http://dx.doi.org/10.1145/3025453.3025912>.",
+  "description": "The Datasaurus Dozen is a set of datasets with the same summary statistics. They retain the same summary statistics despite having radically different distributions. The datasets represent a larger and quirkier object lesson that is typically taught via Anscombe's Quartet (available in the 'datasets' package). Anscombe's Quartet contains four very different distributions with the same summary statistics and as such highlights the value of visualisation in understanding data, over and above summary statistics. As well as being an engaging variant on the Quartet, the data is generated in a novel way. The simulated annealing process used to derive datasets from the original Datasaurus is detailed in \"Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing\" <doi:10.1145/3025453.3025912>.",
   "name": "datasauRus: Datasets from the Datasaurus Dozen",
-  "codeRepository": "https://github.com/lockedata/datasauRus",
-  "issueTracker": "https://github.com/lockedata/datasauRus/issues",
+  "codeRepository": "https://github.com/jumpingrivers/datasauRus",
+  "issueTracker": "https://github.com/jumpingrivers/datasauRus/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.0 (2018-04-23)",
+  "runtimePlatform": "R version 4.1.2 (2021-11-01)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -25,6 +21,12 @@
     "url": "https://cran.r-project.org"
   },
   "author": [
+    {
+      "@type": "Person",
+      "givenName": "Rhian",
+      "familyName": "Davies",
+      "email": "rhian@jumpingrivers.com"
+    },
     {
       "@type": "Person",
       "givenName": "Steph",
@@ -44,6 +46,12 @@
       "givenName": "Richard",
       "familyName": "Cotton",
       "email": "richierocks@gmail.com"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Tim",
+      "familyName": "Book",
+      "email": "TimothyKBook@gmail.com"
     },
     {
       "@type": "Person",
@@ -67,15 +75,19 @@
   "funder": [
     {
       "@type": "Organization",
+      "name": "Jumping Rivers"
+    },
+    {
+      "@type": "Organization",
       "name": "Locke Data"
     }
   ],
   "maintainer": [
     {
       "@type": "Person",
-      "givenName": "Steph",
-      "familyName": "Locke",
-      "email": "stephanie.g.locke@gmail.com"
+      "givenName": "Rhian",
+      "familyName": "Davies",
+      "email": "rhian@jumpingrivers.com"
     }
   ],
   "softwareSuggestions": [
@@ -152,28 +164,20 @@
       "sameAs": "https://CRAN.R-project.org/package=dplyr"
     }
   ],
-  "softwareRequirements": [
-    {
+  "softwareRequirements": {
+    "1": {
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
       "version": ">= 3.0.0"
-    }
-  ],
-  "releaseNotes": "https://github.com/lockedata/datasaurus/blob/master/NEWS.md",
-  "readme": "https://github.com/lockedata/datasauRus/blob/master/README.md",
-  "fileSize": "587.196KB",
-  "contIntegration": "https://travis-ci.org/lockedata/datasauRus",
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "1571.563KB",
+  "releaseNotes": "https://github.com/jumpingrivers/datasauRus/blob/master/NEWS.md",
+  "readme": "https://github.com/jumpingrivers/datasauRus/blob/main/README.md",
+  "contIntegration": "https://github.com/jumpingrivers/datasauRus/actions",
   "developmentStatus": "http://www.repostatus.org/#active",
-  "relatedLink": "https://CRAN.R-project.org/package=datasauRus",
-  "keywords": [
-    "r",
-    "datasets",
-    "datasaurus",
-    "anscombesquartet",
-    "r-package",
-    "rstats",
-    "datasaurus-dozen",
-    "summary-statistics"
-  ]
+  "keywords": ["r", "datasets", "datasaurus", "anscombesquartet", "r-package", "rstats", "datasaurus-dozen", "summary-statistics"],
+  "relatedLink": "https://CRAN.R-project.org/package=datasauRus"
 }

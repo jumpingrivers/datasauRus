@@ -1,8 +1,4 @@
-url: https://itsalocke.com/datasauRus
+url: https://jumpingrivers.github.io/datasauRus
 template:
-  package: lockedatapkg
-  default_assets: false
-authors:
-  Locke Data:
-    href: "https://itsalocke.com/"
-    html: "<img src='https://github.com/lockedatapublished.png' height=24>"
+  bootstrap: 5
+
