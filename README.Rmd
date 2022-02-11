@@ -8,11 +8,11 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README/README-"
+ fig.path = "man/figures/"
 )
 ```
 
-# datasauRus
+# datasauRus <img src="man/figures/logo.png" align="right" />
 <!-- badges: start -->
 [![CRAN version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus) [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html) 
 [![R-CMD-check](https://github.com/jumpingrivers/datasauRus/workflows/R-CMD-check/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions)

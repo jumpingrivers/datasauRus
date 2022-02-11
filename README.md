@@ -14,6 +14,12 @@ state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 <!-- badges: end -->
 
+```{r chunk-name, include=FALSE}
+knitr::opts_chunk$set(
+  fig.path = "man/figures/"
+)
+```
+
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus
 Dozen show us why visualisation is important – summary statistics can be
 the same but distributions can be very different. In short, this package
