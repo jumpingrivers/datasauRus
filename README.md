@@ -44,8 +44,6 @@ The latest stable version is available on CRAN
 
 ``` r
 install.packages("datasauRus")
-#> Installing package into '/home/rhian/R/x86_64-pc-linux-gnu-library/4.1'
-#> (as 'lib' is unspecified)
 ```
 
 You can get the latest development version from GitHub, so use
@@ -53,18 +51,6 @@ You can get the latest development version from GitHub, so use
 
 ``` r
 devtools::install_github("jumpingrivers/datasauRus")
-#> Using github PAT from envvar GITHUB_PAT
-#> Downloading GitHub repo jumpingrivers/datasauRus@HEAD
-#>      checking for file ‘/tmp/RtmpgvFswg/remotes2243740b91509/jumpingrivers-datasauRus-1db1933/DESCRIPTION’ ...  ✓  checking for file ‘/tmp/RtmpgvFswg/remotes2243740b91509/jumpingrivers-datasauRus-1db1933/DESCRIPTION’
-#>   ─  preparing ‘datasauRus’:
-#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
-#>   ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>   ─  building ‘datasauRus_0.1.4.tar.gz’
-#>      
-#> 
-#> Installing package into '/home/rhian/R/x86_64-pc-linux-gnu-library/4.1'
-#> (as 'lib' is unspecified)
 ```
 
 ## Usage

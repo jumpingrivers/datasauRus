@@ -104,37 +104,35 @@
 <p>The original Datasaurus was created by Alberto Cairo in this great <a href="http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html" class="external-link">blog post</a>.</p>
 <p>The other Dozen were generated using simulated annealing and the process is described in the paper “Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing” by Justin Matejka and George Fitzmaurice (<a href="https://www.autodeskresearch.com/publications/samestats" class="external-link">open access materials including manuscript and code</a>, <a href="https://doi.org/10.1145/3025453.3025912" class="external-link">official paper</a>).</p>
 <p>In the paper, Justin and George simulate a variety of datasets that the same summary statistics to the Datasaurus but have very different distributions.</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/DinoSequential.gif"</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/DinoSequential.gif" title="Sequential dinosaur gif" alt="Sequential dinosaur gif" width="600px"></p>
 <div class="section level2">
 <h2 id="install">Install<a class="anchor" aria-label="anchor" href="#install"></a>
 </h2>
 <p>The latest stable version is available on CRAN</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"datasauRus"</span><span class="op">)</span></code></pre></div>
 <p>You can get the latest development version from GitHub, so use {devtools} to install the package</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"jumpingrivers/datasauRus"</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
 <p>You can use the package to produce Anscombe plots and more.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jumpingrivers/datasauRus" class="external-link">datasauRus</a></span><span class="op">)</span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://ggplot2.tidyverse.org" class="external-link">"ggplot2"</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/jumpingrivers/datasauRus" class="external-link">"datasauRus"</a></span><span class="op">)</span>
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">datasaurus_dozen</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">x</span>, y <span class="op">=</span> <span class="va">y</span>, colour <span class="op">=</span> <span class="va">dataset</span><span class="op">)</span><span class="op">)</span><span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_void</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span><span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html" class="external-link">facet_wrap</a></span><span class="op">(</span><span class="op">~</span><span class="va">dataset</span>, ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
-<p><img src="README/README-unnamed-chunk-3-1.png"><!-- --></p>
+<p><img src="README/README-unnamed-chunk-5-1.png"><!-- --></p>
 </div>
 <div class="section level2">
 <h2 id="contributing-to-the-package">Contributing to the package<a class="anchor" aria-label="anchor" href="#contributing-to-the-package"></a>
 </h2>
-<p>Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out <a href="CONTRIBUTING.html">our contributing guide</a>.</p>
+<p>Want to report a bug or suggest a feature? Great stuff! For more information on how to contribute check out <a href="CONTRIBUTING.html">our contributing guide</a>.</p>
 <p>Please note that this R package is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By participating in this package project you agree to abide by its terms.</p>
 </div>
 </div>
@@ -178,7 +176,6 @@
 <li>Steph Locke <br><small class="roles"> Author </small>  </li>
 <li>Lucy D'Agostino McGowan <br><small class="roles"> Author </small>  </li>
 <li>Jumping Rivers <br><small class="roles"> Funder </small>  </li>
-<li>Locke Data <br><small class="roles"> Funder </small>  </li>
 <li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
@@ -199,7 +196,7 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by Rhian Davies, Steph Locke, Lucy D’Agostino McGowan, Jumping Rivers, Locke Data.</p>
+<p>Developed by Rhian Davies, Steph Locke, Lucy D’Agostino McGowan, Jumping Rivers.</p>
 </div>
 
 <div class="pkgdown-footer-right">

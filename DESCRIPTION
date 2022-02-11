@@ -9,8 +9,7 @@ Authors@R: c(person("Rhian", "Davies", email = "rhian@jumpingrivers.com", role =
              person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut")),
              person("Richard", "Cotton", email = "richierocks@gmail.com", role = c("ctb")),
              person("Tim", "Book", email = "TimothyKBook@gmail.com", role = c("ctb")),
-             person("Jumping Rivers", role = c("fnd")),
-             person("Locke Data", role = c("fnd"))
+             person("Jumping Rivers", role = c("fnd"))
 			 )
 Description: The Datasaurus Dozen is a set of datasets with the same summary statistics. They 
              retain the same summary statistics despite having radically different distributions.

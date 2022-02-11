@@ -39,13 +39,13 @@ knitr::include_graphics("man/figures/DinoSequential.gif")
 ## Install
 The latest stable version is available on CRAN
 
-```{r}
+```{r, eval = FALSE}
 install.packages("datasauRus")
 ```
 
 You can get the latest development version from GitHub, so use {devtools} to install the package
 
-```{r}
+```{r, eval = FALSE}
 devtools::install_github("jumpingrivers/datasauRus")
 ```
 
