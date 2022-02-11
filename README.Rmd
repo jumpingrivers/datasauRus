@@ -68,4 +68,6 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
 
 Want to report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md).
 
-Please note that this R package is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this package project you agree to abide by its terms.
+ ## Code of Conduct
+  
+  Please note that the datasauRus project is released with a [Contributor Code of Conduct](https://jumpingrivers.github.io/datasauRus/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms
