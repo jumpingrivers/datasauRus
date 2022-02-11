@@ -1,10 +1,3 @@
-#' datasauRus
-#' @example inst/examples/datasauRus.R
-#'
-#' @name datasauRus
-#' @docType package
-NULL
-
 #'Box plot data
 #'
 #'This dataset is the box plot data produced by Matjeka &

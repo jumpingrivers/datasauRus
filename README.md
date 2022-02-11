@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# datasauRus
+# datasauRus <img src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
 
@@ -13,12 +13,6 @@ version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 <!-- badges: end -->
-
-```{r chunk-name, include=FALSE}
-knitr::opts_chunk$set(
-  fig.path = "man/figures/"
-)
-```
 
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus
 Dozen show us why visualisation is important – summary statistics can be
@@ -73,7 +67,7 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
   facet_wrap(~dataset, ncol = 3)
 ```
 
-![](README/README-unnamed-chunk-5-1.png)<!-- -->
+![](man/figures/datasets-1.png)<!-- -->
 
 ## Contributing to the package
 

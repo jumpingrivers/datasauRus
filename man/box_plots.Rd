@@ -4,14 +4,16 @@
 \name{box_plots}
 \alias{box_plots}
 \title{Box plot data}
-\format{A data frame with 2484 rows and 5 variables:
+\format{
+A data frame with 2484 rows and 5 variables:
 \itemize{
 \item \strong{left}: data pulled to the left
 \item \strong{lines}: data with arbitrary spikes along a range
 \item \strong{normal}: normally distributed data
 \item \strong{right}: data pulled to the right
 \item \strong{split}: split data
-}}
+}
+}
 \usage{
 box_plots
 }

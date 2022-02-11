@@ -4,13 +4,15 @@
 \name{simpsons_paradox_wide}
 \alias{simpsons_paradox_wide}
 \title{Simpsons Paradox (wide) data}
-\format{A data frame with 222 rows and 4 variables:
+\format{
+A data frame with 222 rows and 4 variables:
 \itemize{
 \item \strong{simpson_1_x}: x-values from the \code{simpson_1} dataset
 \item \strong{simpson_1_y}: y-values from the \code{simpson_1} dataset
 \item \strong{simpson_2_x}: x-values from the \code{simpson_2} dataset
 \item \strong{simpson_2_y}: y-values from the \code{simpson_2} dataset
-}}
+}
+}
 \usage{
 simpsons_paradox_wide
 }

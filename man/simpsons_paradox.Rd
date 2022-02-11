@@ -4,12 +4,14 @@
 \name{simpsons_paradox}
 \alias{simpsons_paradox}
 \title{Simpsons Paradox data}
-\format{A data frame with 444 rows and 3 variables:
+\format{
+A data frame with 444 rows and 3 variables:
 \itemize{
 \item \strong{dataset}: indicates which of the two datasets the data are from, \code{simpson_1} or \code{simpson_2}
 \item \strong{x}: x-values
 \item \strong{y}: y-values
-}}
+}
+}
 \usage{
 simpsons_paradox
 }
@@ -25,6 +27,21 @@ if(require(ggplot2)){
     theme(legend.position = "none")+
     facet_wrap(~dataset, ncol=3)
 }
+
+# Base R Plots
+state <- par('mfrow')
+
+par(mfrow = c(1, 2))
+
+sets <- unique(datasaurus_dozen$dataset)
+
+for (i in 1:2) {
+  df <- simpsons_paradox[simpsons_paradox$dataset == paste0('simpson_', i), ]
+  plot(df$x, df$y, pch = 16, xlab = '', ylab = '')
+  title(paste0('Simpson\'s Paradox ', i))
+}
+
+par(state)
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

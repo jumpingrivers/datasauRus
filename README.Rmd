@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
 ```
 
 # datasauRus <img src="man/figures/logo.png" align="right" />
+
 <!-- badges: start -->
 [![CRAN version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus) [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html) 
 [![R-CMD-check](https://github.com/jumpingrivers/datasauRus/workflows/R-CMD-check/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions)
@@ -53,7 +54,7 @@ devtools::install_github("jumpingrivers/datasauRus")
 
 You can use the package to produce Anscombe plots and more.
 
-```{r, fig.height=12, fig.width=9}
+```{r datasets, fig.height=12, fig.width=9}
 library("ggplot2")
 library("datasauRus")
 ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+

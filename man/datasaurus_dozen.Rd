@@ -4,12 +4,14 @@
 \name{datasaurus_dozen}
 \alias{datasaurus_dozen}
 \title{Datasaurus Dozen data}
-\format{A data frame with 1846 rows and 3 variables:
+\format{
+A data frame with 1846 rows and 3 variables:
 \itemize{
 \item \strong{dataset}: indicates which dataset the data are from
 \item \strong{x}: x-values
 \item \strong{y}: y-values
-}}
+}
+}
 \usage{
 datasaurus_dozen
 }
@@ -25,6 +27,23 @@ if(require(ggplot2)){
     theme(legend.position = "none")+
     facet_wrap(~dataset, ncol=3)
 }
+
+# Base R plots
+state <- par("mar", "mfrow")
+
+# plot
+par(mfrow = c(5, 3), mar=c(1, 2, 2, 1))
+
+sets = sort(unique(datasaurus_dozen$dataset))
+
+for (s in sets) {
+  df <- datasaurus_dozen[datasaurus_dozen$dataset == s, ]
+  plot(df$x, df$y, pch = 16)
+  title(s)
+}
+
+#reset settings
+par(state)
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).
