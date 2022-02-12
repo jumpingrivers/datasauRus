@@ -4,12 +4,14 @@
 \name{twelve_from_slant_long}
 \alias{twelve_from_slant_long}
 \title{Twelve From Slant (long) data}
-\format{A data frame with 2184 rows and 3 variables:
+\format{
+A data frame with 2184 rows and 3 variables:
 \itemize{
 \item \strong{dataset}: the dataset the data are from
 \item \strong{x}: x-values
 \item \strong{y}: y-values
-}}
+}
+}
 \usage{
 twelve_from_slant_long
 }
@@ -25,6 +27,21 @@ if(require(ggplot2)){
     theme(legend.position = "none")+
     facet_wrap(~dataset, ncol=3)
 }
+
+# Base R Plots
+state <- par('mfrow', 'mar')
+
+par(mfrow = c(4, 3), mar = c(3, 2, 2, 2))
+
+sets <- sort(unique(twelve_from_slant_long$dataset))
+
+for (s in sets) {
+  df <- twelve_from_slant_long[twelve_from_slant_long$dataset == s, ]
+  plot(df$x, df$y, pch = 16, xlab = '', ylab = '')
+  title(s)
+}
+
+par(state)
 }
 \references{
 Matejka, J., & Fitzmaurice, G. (2017).

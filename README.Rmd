@@ -8,12 +8,17 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README/README-"
+ fig.path = "man/figures/"
 )
 ```
 
-# datasauRus
-[![CRAN version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus) [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html) [![Build Status](https://travis-ci.org/lockedata/datasauRus.svg?branch=master)](https://travis-ci.org/lockedata/datasauRus) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![Locke Data Slack](https://img.shields.io/badge/Slack-discuss-blue.svg?logo=slack&longCache=true&style=flat)](https://join.slack.com/t/lockedata/shared_invite/enQtMjkwNjY3ODkwMzg2LTI1OGU1NTM3ZGIyZGFiNTdlODI3MzU2N2ZlNDczMjM4M2U2OWVmNDMzZTQ1ZGNlZDQ3MGM2MGVjMjI2MWIyMjI)
+# datasauRus <img src="man/figures/logo.png" align="right" />
+
+<!-- badges: start -->
+[![CRAN version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus) [![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html) 
+[![R-CMD-check](https://github.com/jumpingrivers/datasauRus/workflows/R-CMD-check/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+<!-- badges: end --> 
 
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus Dozen show us why visualisation is important -- summary statistics can be the same but distributions can be very different. In short, this package gives a fun alternative to [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), available in R as `anscombe`.
 
@@ -27,36 +32,42 @@ Matejka and George Fitzmaurice ([open access materials including manuscript and 
 
 In the paper, Justin and George simulate a variety of datasets that the same summary statistics to the Datasaurus but have very different distributions. 
 
-<img src="https://github.com/stephlocke/lazyCDN/blob/master/DinoSequential.gif?raw=true" alt="sequential dino" width="600"/>
 
+```{r, out.width="600px", fig.alt="Sequential dinosaur gif", echo = FALSE}
+knitr::include_graphics("man/figures/DinoSequential.gif")
+```
 
 ## Install
-The latest stable version (0.1.2) is available on CRAN
-```r
+The latest stable version is available on CRAN
+
+```{r, eval = FALSE}
 install.packages("datasauRus")
 ```
 
-You can get the latest development version from GitHub, so use `devtools` to install the package
+You can get the latest development version from GitHub, so use {devtools} to install the package
 
-```r
-devtools::install_github("lockedata/datasauRus")
+```{r, eval = FALSE}
+devtools::install_github("jumpingrivers/datasauRus")
 ```
 
 ## Usage
+
 You can use the package to produce Anscombe plots and more.
 
-```{r fig.height=12, fig.width=9}
-library(ggplot2)
-library(datasauRus)
-ggplot(datasaurus_dozen, aes(x=x, y=y, colour=dataset))+
-  geom_point()+
-  theme_void()+
+```{r datasets, fig.height=12, fig.width=9}
+library("ggplot2")
+library("datasauRus")
+ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
+  geom_point() +
+  theme_void() +
   theme(legend.position = "none")+
-  facet_wrap(~dataset, ncol=3)
+  facet_wrap(~dataset, ncol = 3)
 ```
 
 ## Contributing to the package
 
-Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md).
+Want to report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md).
 
-Please note that this R package is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this package project you agree to abide by its terms.
+ ## Code of Conduct
+  
+  Please note that the datasauRus project is released with a [Contributor Code of Conduct](https://jumpingrivers.github.io/datasauRus/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms

@@ -4,7 +4,8 @@
 \name{twelve_from_slant_alternate_wide}
 \alias{twelve_from_slant_alternate_wide}
 \title{Twelve From Slant Alternate (wide) data}
-\format{A data frame with 182 rows and 24 variables:
+\format{
+A data frame with 182 rows and 24 variables:
 \itemize{
 \item \strong{bullseye_x}: x-values for the \code{bullseye} dataset
 \item \strong{bullseye_y}: y-values for the \code{bullseye} dataset
@@ -30,7 +31,8 @@
 \item \strong{wide_lines_y}: y-values for the \code{wide_lines} dataset
 \item \strong{x_shape_x}: x-values for the \code{x_shape} dataset
 \item \strong{x_shape_y}: y-values for the \code{x_shape} dataset
-}}
+}
+}
 \usage{
 twelve_from_slant_alternate_wide
 }

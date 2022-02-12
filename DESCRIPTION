@@ -1,38 +1,45 @@
 Package: datasauRus
 Title: Datasets from the Datasaurus Dozen
-Version: 0.1.4
-Authors@R: c(person("Steph", "Locke", email = "stephanie.g.locke@gmail.com", role = c( "cre","aut")),
-             person("Alberto", "Cairo", email = "alberto.cairo@gmail.com", role = c( "dtc")),
-             person("Justin", "Matejka", email = "Justin.Matejka@autodesk.com", role = c( "dtc")),
-             person("George", "Fitzmaurice", email = "George.Fitzmaurice@autodesk.com", role = c( "dtc")),
-             person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut")),
-             person("Richard", "Cotton", email = "richierocks@gmail.com", role = c("ctb")),
-             person("Tim", "Book", email = "TimothyKBook@gmail.com", role = c("ctb")),
-             person("Locke Data", role = c("fnd"))
-			 )
-Description: The Datasaurus Dozen is a set of datasets with the same summary statistics. They 
-             retain the same summary statistics despite having radically different distributions.
-             The datasets represent a larger and quirkier object lesson that is typically taught
-             via Anscombe's Quartet (available in the 'datasets' package). Anscombe's Quartet
-             contains four very different distributions with the same summary statistics and as 
-             such highlights the value of visualisation in understanding data, over and above
-             summary statistics. As well as being an engaging variant on the Quartet, the data
-             is generated in a novel way. The simulated annealing process used to derive datasets 
-             from the original Datasaurus is detailed in "Same Stats, Different Graphs: Generating 
-             Datasets with Varied Appearance and Identical Statistics through Simulated Annealing" 
-             <doi:10.1145/3025453.3025912>.
-Depends: R (>= 3.0.0)
+Version: 0.1.5
+Authors@R: c(
+    person("Rhian", "Davies", , "rhian@jumpingrivers.com", role = c("cre", "aut")),
+    person("Steph", "Locke", , "stephanie.g.locke@gmail.com", role = "aut"),
+    person("Alberto", "Cairo", , "alberto.cairo@gmail.com", role = "dtc"),
+    person("Justin", "Matejka", , "Justin.Matejka@autodesk.com", role = "dtc"),
+    person("George", "Fitzmaurice", , "George.Fitzmaurice@autodesk.com", role = "dtc"),
+    person("Lucy", "D'Agostino McGowan", , "ld.mcgowan@vanderbilt.edu", role = "aut"),
+    person("Richard", "Cotton", , "richierocks@gmail.com", role = "ctb"),
+    person("Tim", "Book", , "TimothyKBook@gmail.com", role = "ctb"),
+    person("Jumping Rivers", role = "fnd")
+  )
+Description: The Datasaurus Dozen is a set of datasets with the same
+    summary statistics. They retain the same summary statistics despite
+    having radically different distributions.  The datasets represent a
+    larger and quirkier object lesson that is typically taught via
+    Anscombe's Quartet (available in the 'datasets' package). Anscombe's
+    Quartet contains four very different distributions with the same
+    summary statistics and as such highlights the value of visualisation
+    in understanding data, over and above summary statistics. As well as
+    being an engaging variant on the Quartet, the data is generated in a
+    novel way. The simulated annealing process used to derive datasets
+    from the original Datasaurus is detailed in "Same Stats, Different
+    Graphs: Generating Datasets with Varied Appearance and Identical
+    Statistics through Simulated Annealing" <doi:10.1145/3025453.3025912>.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Suggests: covr,
-    testthat,
+URL: https://github.com/jumpingrivers/datasauRus,
+    https://jumpingrivers.github.io/datasauRus
+BugReports: https://github.com/jumpingrivers/datasauRus/issues
+Depends: 
+    R (>= 3.0.0)
+Suggests: 
+    dplyr,
+    ggplot2,
     knitr,
     rmarkdown,
-    ggplot2,
-    dplyr
-VignetteBuilder: knitr
-RoxygenNote: 6.1.0.9000
+    testthat
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
-URL: https://github.com/lockedata/datasauRus, https://itsalocke.com/datasaurus/
-BugReports: https://github.com/lockedata/datasauRus/issues
+RoxygenNote: 7.1.2

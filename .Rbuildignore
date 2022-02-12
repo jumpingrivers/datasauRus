@@ -8,10 +8,11 @@
 ^codecov\.yml$
 ^README\.Rmd$
 ^README-.*\.png$
+^docs$
 ^data-raw$
 ^cran-comments\.md$
 ^CONTRIBUTING\.md$
-^docs$
 ^_pkgdown\.yml$
-
+^images$
 ^codemeta\.json$
+^pkgdown$

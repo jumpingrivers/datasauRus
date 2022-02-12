@@ -4,7 +4,8 @@
 \name{datasaurus_dozen_wide}
 \alias{datasaurus_dozen_wide}
 \title{Datasaurus Dozen (wide) data}
-\format{A data frame with 142 rows and 26 variables:
+\format{
+A data frame with 142 rows and 26 variables:
 \itemize{
 \item \strong{away_x}: x-values for the \code{away} dataset
 \item \strong{away_y}: y-values for the \code{away} dataset
@@ -32,7 +33,8 @@
 \item \strong{wide_lines_y}: y-values for the \code{wide_lines} dataset
 \item \strong{x_shape_x}: x-values for the \code{x_shape} dataset
 \item \strong{x_shape_y}: y-values for the \code{x_shape} dataset
-}}
+}
+}
 \usage{
 datasaurus_dozen_wide
 }
@@ -41,11 +43,11 @@ A dataset demonstrating the utility of visualization. These 12 datasets are equa
 standard deviation, and Pearson's correlation.
 }
 \examples{
-#save current settings
+# Save current settings
 state <- par("mar", "mfrow")
 
-# plot
-par(mfrow = c(5, 3), mar=c(1,3,3,1))
+# Base R Plots
+par(mfrow = c(5, 3), mar=c(1, 3, 3, 1))
 
 nms <- names(datasaurus_dozen_wide)
 for (i in seq(1, 25, by = 2)){
