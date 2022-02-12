@@ -1,9 +1,10 @@
-pandoc: '2.2'
-pkgdown: 1.4.1
+pandoc: 2.7.3
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   Datasaurus: Datasaurus.html
+last_built: 2022-02-12T10:49Z
 urls:
-  reference: https://itsalocke.com/datasauRus/reference
-  article: https://itsalocke.com/datasauRus/articles
+  reference: https://jumpingrivers.github.io/datasauRus/reference
+  article: https://jumpingrivers.github.io/datasauRus/articles
 

@@ -1,39 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://itsalocke.com/datasauRus/index.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/404.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/box_plots.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/datasauRus.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/CONTRIBUTING.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/datasaurus_dozen.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/datasaurus_dozen_wide.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/SUPPORT.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/simpsons_paradox.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/articles/Datasaurus.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/simpsons_paradox_wide.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/twelve_from_slant_alternate_long.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/authors.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/twelve_from_slant_alternate_wide.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/index.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/twelve_from_slant_long.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/news/index.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/reference/twelve_from_slant_wide.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/box_plots.html</loc>
   </url>
   <url>
-    <loc>https://itsalocke.com/datasauRus/articles/Datasaurus.html</loc>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/datasaurus_dozen.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/datasaurus_dozen_wide.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/simpsons_paradox.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/simpsons_paradox_wide.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/twelve_from_slant_alternate_long.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/twelve_from_slant_alternate_wide.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/twelve_from_slant_long.html</loc>
+  </url>
+  <url>
+    <loc>https://jumpingrivers.github.io/datasauRus/reference/twelve_from_slant_wide.html</loc>
   </url>
 </urlset>
