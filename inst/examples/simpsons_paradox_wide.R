@@ -1,5 +1,5 @@
 #save current settings
-state <- par("mar", "mfrow")
+state = par("mar", "mfrow")
 
 par(mfrow = c(1, 2))
 
