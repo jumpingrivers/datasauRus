@@ -1,0 +1,10 @@
+linters: with_defaults(
+    line_length_linter(100),
+    assignment_linter = NULL,
+    undesirable_operator_linter = undesirable_operator_linter(
+        with_defaults(
+                default_undesirable_operators,
+                "<-" = "Use =, not <-, for assignment."
+        )
+    )
+  )

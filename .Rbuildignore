@@ -16,3 +16,4 @@
 ^images$
 ^codemeta\.json$
 ^pkgdown$
+^.lintr$
