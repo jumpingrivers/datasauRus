@@ -27,7 +27,7 @@ Description: The Datasaurus Dozen is a set of datasets with the same
     Statistics through Simulated Annealing" <doi:10.1145/3025453.3025912>.
 License: MIT + file LICENSE
 URL: https://github.com/jumpingrivers/datasauRus,
-    https://jumpingrivers.github.io/datasauRus
+    https://jumpingrivers.github.io/datasauRus/
 BugReports: https://github.com/jumpingrivers/datasauRus/issues
 Depends: 
     R (>= 3.0.0)

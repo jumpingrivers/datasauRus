@@ -17,3 +17,5 @@
 ^codemeta\.json$
 ^pkgdown$
 ^.lintr$
+^CRAN-SUBMISSION$
+^LICENSE\.md$
