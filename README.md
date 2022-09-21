@@ -5,13 +5,11 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN
-version](http://www.r-pkg.org/badges/version/datasauRus)](https://cran.r-project.org/package=datasauRus)
-[![Downloads](http://cranlogs.r-pkg.org/badges/datasauRus)](http://cran.rstudio.com/web/packages/datasauRus/index.html)
+status](https://www.r-pkg.org/badges/version/datasauRus)](https://CRAN.R-project.org/package=datasauRus)
 [![R-CMD-check](https://github.com/jumpingrivers/datasauRus/workflows/R-CMD-check/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions)
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 <!-- badges: end -->
 
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus
@@ -21,22 +19,20 @@ gives a fun alternative to [Anscombe’s
 Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), available
 in R as `anscombe`.
 
-The original Datasaurus was created by Alberto Cairo in this great [blog
-post](http://www.thefunctionalart.com/2016/08/download-datasaurus-never-trust-summary.html).
-
-The other Dozen were generated using simulated annealing and the process
-is described in the paper “Same Stats, Different Graphs: Generating
-Datasets with Varied Appearance and Identical Statistics through
-Simulated Annealing” by Justin Matejka and George Fitzmaurice ([open
-access materials including manuscript and
-code](https://www.autodeskresearch.com/publications/samestats),
+The original Datasaurus was created by Alberto Cairo. The other Dozen
+were generated using simulated annealing and the process is described in
+the paper “Same Stats, Different Graphs: Generating Datasets with Varied
+Appearance and Identical Statistics through Simulated Annealing” by
+Justin Matejka and George Fitzmaurice ([open access materials including
+manuscript and
+code](https://www.autodesk.com/research/publications/same-stats-different-graphs),
 [official paper](https://doi.org/10.1145/3025453.3025912)).
 
 In the paper, Justin and George simulate a variety of datasets that the
 same summary statistics to the Datasaurus but have very different
 distributions.
 
-<img src="man/figures/DinoSequential.gif" title="Sequential dinosaur gif" alt="Sequential dinosaur gif" width="600px" />
+<img src="https://damassets.autodesk.net/content/dam/autodesk/research/publications-assets/gifs/same-stats-different-graphs/DinoSequentialSmaller.gif" title="Sequential dinosaur gif" alt="Sequential dinosaur gif" width="600px" />
 
 ## Install
 
@@ -69,12 +65,9 @@ ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset))+
 
 ![](man/figures/datasets-1.png)<!-- -->
 
-## Contributing to the package
+## Code of Conduct
 
-Want to report a bug or suggest a feature? Great stuff! For more
-information on how to contribute check out [our contributing
-guide](.github/CONTRIBUTING.md).
-
-Please note that this R package is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By participating in this package project
-you agree to abide by its terms.
+Please note that the datasauRus project is released with a [Contributor
+Code of
+Conduct](https://jumpingrivers.github.io/datasauRus/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms
