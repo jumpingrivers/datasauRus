@@ -1,3 +1,7 @@
+# datasauRus 0.1.7
+
+* Adding long boxplots data and csv for datasaurus
+
 # datasauRus 0.1.6
 
 * No functional changes; just code styling and linting

@@ -19,6 +19,24 @@
 #' @example inst/examples/box_plots.R
 "box_plots"
 
+#' Box plot data
+#'
+#' This dataset is the box plot data produced by Matjeka &
+#' Fitzmaurice to demonstrate applicability of their process.
+#'
+#' @name box_plots_long
+#' @format A data frame with 12420 rows and 2 variables:
+#'* **Plot**: either the left, lines, normal, right or split boxplot
+#'* **Values**: the corresponding values from each dataset
+#' @references Matejka, J., & Fitzmaurice, G. (2017).
+#' Same Stats, Different Graphs: Generating Datasets with
+#' Varied Appearance and Identical Statistics through Simulated
+#' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
+#' Conference on Human Factors in Computing Systems._
+#' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats). #nolint
+#' @example inst/examples/box_plots_long.R
+"box_plots_long"
+
 #' Datasaurus Dozen (wide) data
 #'
 #' A dataset demonstrating the utility of visualization.
