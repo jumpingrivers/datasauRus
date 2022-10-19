@@ -1,6 +1,6 @@
 # datasauRus 0.1.7
 
-* Adding long boxplots data and csv for datasaurus
+* Add long boxplots data
 
 # datasauRus 0.1.6
 
