@@ -15,7 +15,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/box_plots.R
 "box_plots"
 
@@ -33,8 +33,8 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodeskresearch.com/publications/samestats](https://www.autodeskresearch.com/publications/samestats). #nolint
-#' @example inst/examples/box_plots_long.R
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
+#' @example inst/examples/box_plots.R
 "box_plots_long"
 
 #' Datasaurus Dozen (wide) data
@@ -75,7 +75,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/datasaurus_dozen_wide.R
 "datasaurus_dozen_wide"
 
@@ -94,7 +94,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/datasaurus_dozen.R
 "datasaurus_dozen"
 
@@ -116,7 +116,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs).#nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/).#nolint
 #' @example inst/examples/simpsons_paradox_wide.R
 "simpsons_paradox_wide"
 
@@ -137,7 +137,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/simpsons_paradox.R
 "simpsons_paradox"
 
@@ -156,7 +156,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/twelve_from_slant_alternate_long.R
 "twelve_from_slant_alternate_long"
 
@@ -196,7 +196,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/twelve_from_slant_alternate_wide.R
 "twelve_from_slant_alternate_wide"
 
@@ -215,7 +215,7 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/twelve_from_slant_long.R
 "twelve_from_slant_long"
 
@@ -255,6 +255,6 @@
 #' Varied Appearance and Identical Statistics through Simulated
 #' Annealing. _CHI 2017 Conference proceedings: ACM SIGCHI
 #' Conference on Human Factors in Computing Systems._
-#' Retrieved from [https://www.autodesk.com/research/publications/same-stats-different-graphs](https://www.autodesk.com/research/publications/same-stats-different-graphs). #nolint
+#' Retrieved from [https://www.research.autodesk.com/publications/same-stats-different-graphs/](https://www.research.autodesk.com/publications/same-stats-different-graphs/). #nolint
 #' @example inst/examples/twelve_from_slant_wide.R
 "twelve_from_slant_wide"

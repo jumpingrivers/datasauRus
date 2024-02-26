@@ -25,7 +25,7 @@ the paper “Same Stats, Different Graphs: Generating Datasets with Varied
 Appearance and Identical Statistics through Simulated Annealing” by
 Justin Matejka and George Fitzmaurice ([open access materials including
 manuscript and
-code](https://www.autodesk.com/research/publications/same-stats-different-graphs),
+code](https://www.research.autodesk.com/publications/same-stats-different-graphs/),
 [official paper](https://doi.org/10.1145/3025453.3025912)).
 
 In the paper, Justin and George simulate a variety of datasets that the

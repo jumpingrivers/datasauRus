@@ -12,7 +12,7 @@ This package wraps the awesome Datasaurus Dozen dataset, which contains [13](htt
 
 The Datasaurus was created by Alberto Cairo. Datasaurus shows us why visualisation is important, not just summary statistics.
 
-He's been subsequently made even more famous in the paper [Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing](https://www.autodesk.com/research/publications/same-stats-different-graphs) by Justin Matejka and George Fitzmaurice.
+He's been subsequently made even more famous in the paper [Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing](https://www.research.autodesk.com/publications/same-stats-different-graphs/) by Justin Matejka and George Fitzmaurice.
 
 In the paper, Justin and George simulate a variety of datasets that the same summary statistics to the Datasaurus but have very different distributions. 
 
