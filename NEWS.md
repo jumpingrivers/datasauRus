@@ -1,3 +1,7 @@
+# datasauRus 0.1.8
+
+* Update maintainer
+
 # datasauRus 0.1.7
 
 * Add long boxplots data

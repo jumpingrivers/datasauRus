@@ -51,6 +51,6 @@ Same Stats, Different Graphs: Generating Datasets with
 Varied Appearance and Identical Statistics through Simulated
 Annealing. \emph{CHI 2017 Conference proceedings: ACM SIGCHI
 Conference on Human Factors in Computing Systems.}
-Retrieved from \url{https://www.autodesk.com/research/publications/same-stats-different-graphs}. #nolint
+Retrieved from \url{https://www.research.autodesk.com/publications/same-stats-different-graphs/}. #nolint
 }
 \keyword{datasets}

@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN status](https://www.r-pkg.org/badges/version/datasauRus)](https://CRAN.R-project.org/package=datasauRus)
 [![R-CMD-check](https://github.com/jumpingrivers/datasauRus/workflows/R-CMD-check/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions)
+[![R-CMD-check](https://github.com/jumpingrivers/datasauRus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jumpingrivers/datasauRus/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This package wraps the awesome Datasaurus Dozen datasets. The Datasaurus Dozen show us why visualisation is important -- summary statistics can be the same but distributions can be very different. In short, this package gives a fun alternative to [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), available in R as `anscombe`.
@@ -26,7 +27,7 @@ The original Datasaurus was created by Alberto Cairo. The other Dozen were gener
 is described in the paper "Same Stats, Different Graphs: Generating
 Datasets with Varied Appearance and Identical Statistics through
 Simulated Annealing" by Justin
-Matejka and George Fitzmaurice ([open access materials including manuscript and code](https://www.autodesk.com/research/publications/same-stats-different-graphs), [official paper](https://doi.org/10.1145/3025453.3025912)).
+Matejka and George Fitzmaurice ([open access materials including manuscript and code](https://www.research.autodesk.com/publications/same-stats-different-graphs/), [official paper](https://doi.org/10.1145/3025453.3025912)).
 
 In the paper, Justin and George simulate a variety of datasets that the same summary statistics to the Datasaurus but have very different distributions. 
 
