@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   Datasaurus: Datasaurus.html
-last_built: 2025-01-23T17:17Z
+last_built: 2025-01-23T17:19Z
 urls:
   reference: https://jumpingrivers.github.io/datasauRus/reference
   article: https://jumpingrivers.github.io/datasauRus/articles
