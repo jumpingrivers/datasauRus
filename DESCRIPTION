@@ -1,11 +1,11 @@
 Package: datasauRus
 Title: Datasets from the Datasaurus Dozen
-Version: 0.1.8
+Version: 0.1.9
 Authors@R: c(
     person("Colin", "Gillespie", , "colin@jumpingrivers.com", role = c("cre", "aut")),
     person("Steph", "Locke", , "stephanie.g.locke@gmail.com", role = "aut"),
     person("Alberto", "Cairo", , "alberto.cairo@gmail.com", role = "dtc"),
-    person("Rhian", "Davies", , "statsrhian@gmail.com", role = c("aut")),
+    person("Rhian", "Davies", , "statsrhian@gmail.com", role = "aut"),
     person("Justin", "Matejka", , "Justin.Matejka@autodesk.com", role = "dtc"),
     person("George", "Fitzmaurice", , "George.Fitzmaurice@autodesk.com", role = "dtc"),
     person("Lucy", "D'Agostino McGowan", , "ld.mcgowan@vanderbilt.edu", role = "aut"),
@@ -42,7 +42,7 @@ Suggests:
 VignetteBuilder: 
     knitr
 Encoding: UTF-8
+Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
-Language: en-US
+RoxygenNote: 7.3.2

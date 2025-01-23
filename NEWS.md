@@ -1,3 +1,6 @@
+# datasauRus 0.1.9
+* Spring clean: linting
+
 # datasauRus 0.1.8
 
 * Update maintainer
