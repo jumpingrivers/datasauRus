@@ -1,3 +1,9 @@
+# datasauRus 0.1.10
+
+## Bug fixes and minor improvements
+
+* Issues now use the Jumping Rivers organisation templates.
+
 # datasauRus 0.1.9
 * Spring clean: linting
 
